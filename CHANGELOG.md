@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.1.4] - 2019-11-21
+
+- Configure the type of Gitmoji output
+
 ## [0.1.3] - 2019-11-19
 
 - Fix extension description

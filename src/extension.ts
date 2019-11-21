@@ -6,13 +6,13 @@ export function activate(context: vscode.ExtensionContext) {
 
 	let disposable = vscode.commands.registerCommand('extension.Gitmoji', (uri?) => {
 		const git = getGitExtension();
-		const language = getEnvlanguage();
+		const language = getEnvLanguage();
 
 		if (!git) {
 			vscode.window.showErrorMessage('Unable to load Git Extension');
 			return;
 		}
-		
+
 		let items = [];
 		if(language === "zh-cn"){
 			for (let i = 0; i < Gitmoji.length; i++) {
@@ -32,23 +32,29 @@ export function activate(context: vscode.ExtensionContext) {
 			}
 		}
 
-		/**
-		 * @property {string} emoji
-		 * @property {string} code
-		*/
 		vscode.window.showQuickPick(items).then(function (selected) {
 			if (selected) {
 				vscode.commands.executeCommand('workbench.view.scm');
+				let outputType = vscode.workspace.getConfiguration().get('gitmoji.outputType');
+
 				if (uri) {
 					let selectedRepository = git.repositories.find(repository => {
 						return repository.rootUri.path === uri._rootUri.path;
 					});
 					if (selectedRepository) {
-						prefixCommit(selectedRepository, selected.emoji);
+						if (outputType === "emoji"){
+							prefixCommit(selectedRepository, selected.emoji);
+						} else {
+							prefixCommit(selectedRepository, selected.code);
+						}
 					}
 				} else {
 					for (let repo of git.repositories) {
-						prefixCommit(repo, selected.emoji);
+						if (outputType === "emoji"){
+							prefixCommit(repo, selected.emoji);
+						} else {
+							prefixCommit(repo, selected.code);
+						}
 					}
 				}
 			}
@@ -58,7 +64,7 @@ export function activate(context: vscode.ExtensionContext) {
 	context.subscriptions.push(disposable);
 }
 
-function getEnvlanguage(){
+function getEnvLanguage(){
 	const language = vscode.env.language;
 	return language;
 }

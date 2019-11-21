@@ -13,6 +13,28 @@ This project provides an easy solution for using [Gitmoji](https://github.com/ca
 3. Type `gitmoji-vscode` to find the extension
 4. Click the `Install` button, then the `Enable` button
 
+## Configuration
+
+**Notice**: If you use Gitlab or Coding, type emoji, if you use Github, you can type code or emoji.
+
+* `outputType` - Configure the type of emoji output as needed. Default is `emoji`
+
+For emoji type:
+
+![emoji](https://raw.githubusercontent.com/Vtrois/gitmoji-vscode/master/images/emoji.png)
+
+For code type:
+
+![code](https://raw.githubusercontent.com/Vtrois/gitmoji-vscode/master/images/code.png)
+
+Sample configuration:
+
+```json
+{
+    "gitmoji.outputType": "emoji"
+}
+```
+
 ## Acknowledgement
 
 Thanks to the contributors who inspired this project.
