@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.1.5] - 2019-12-15
+
+- Add new emoji for catching errors
+
 ## [0.1.4] - 2019-11-21
 
 - Configure the type of Gitmoji output

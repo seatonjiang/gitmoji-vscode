@@ -394,6 +394,12 @@ let Gitmoji: Array<Emoji> = [
         "code": ":dizzy:",
         "description": "Adding or updating animations and transitions",
         "description_zh_cn": "添加或更新动画和过场"
+    },
+    {
+        "emoji": "🥅",
+        "code": ":goal_net:",
+        "description": "Catching errors",
+        "description_zh_cn": "捕获异常"
     }
 ];
 export default Gitmoji ;
