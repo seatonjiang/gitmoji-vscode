@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.1.6] - 2019-12-27
+
+- Optimization command description
+
 ## [0.1.5] - 2019-12-15
 
 - Add new emoji for catching errors

@@ -2,7 +2,7 @@
 	"name": "gitmoji-vscode",
 	"displayName": "Gitmoji",
 	"description": "An emoji tool for your git commit messages",
-	"version": "0.1.5",
+	"version": "0.1.6",
 	"author": {
 		"name": "Seaton Jiang",
 		"email": "seaton@vtrois.com"
@@ -39,7 +39,7 @@
 		"commands": [
 			{
 				"command": "extension.Gitmoji",
-				"title": "An emoji tool for your git commit messages",
+				"title": "Gitmoji: An emoji tool for your git commit messages",
 				"icon": {
 					"dark": "images/icon_dark.svg",
 					"light": "images/icon_light.svg"
