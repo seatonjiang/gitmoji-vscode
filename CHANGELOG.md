@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.1.7] - 2020-01-13
+
+- Add space after emoji prefix
+
 ## [0.1.6] - 2019-12-27
 
 - Optimization command description

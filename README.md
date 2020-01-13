@@ -47,7 +47,7 @@ Thanks to the contributors who inspired this project.
 
 **Contributors:**
 
-* Fen
+* Fen、Will Stone
 
 ## License
 
