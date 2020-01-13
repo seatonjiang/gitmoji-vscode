@@ -70,7 +70,7 @@ function getEnvLanguage(){
 }
 
 function prefixCommit(repository: Repository, prefix: String) {
-	repository.inputBox.value = `${prefix}${repository.inputBox.value}`;
+	repository.inputBox.value = `${prefix} ${repository.inputBox.value}`;
 }
 
 function getGitExtension() {
