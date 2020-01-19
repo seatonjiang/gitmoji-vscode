@@ -70,6 +70,34 @@
 						"Suitable for Github, Gitlab, Coding, etc."
 					],
 					"description": "Configure the type of Gitmoji output"
+				},
+				"gitmoji.additionalEmojis": {
+					"type": "array",
+					"default": [],
+					"items": {
+						"type": "object",
+						"title": "A gitmoji entry",
+						"properties": {
+							"emoji": {
+								"type": "string",
+								"description": "The emoji character"
+							},
+							"code": {
+								"type": "string",
+								"description": "The emoji's :code: (including both colons)"
+							},
+							"description": {
+								"type": "string",
+								"description": "The commit type described by this emoji"
+							},
+							"description_zh_cn": {
+								"type": "string",
+								"description": "A chinese (zh_CN) version of the description. If empty, the english description will be used.",
+								"default": ""
+							}
+						}
+					},
+					"description": "Additional emojis shown in the picker"
 				}
 			}
 		}
