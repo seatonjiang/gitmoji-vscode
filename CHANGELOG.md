@@ -3,6 +3,7 @@
 ## [0.1.8] - 2020-01-30
 
 - Add configurable additionnal emojis
+- Add new emoji for deprecating code that needs to be cleaned up
 
 ## [0.1.7] - 2020-01-13
 

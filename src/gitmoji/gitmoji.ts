@@ -400,6 +400,12 @@ let Gitmoji: Array<Emoji> = [
         "code": ":goal_net:",
         "description": "Catching errors",
         "description_zh_cn": "捕获异常"
+    },
+    {
+        "emoji": "🗑",
+        "code": ":wastebasket:",
+        "description": "Deprecating code that needs to be cleaned up",
+        "description_zh_cn": "需要清理的弃用代码"
     }
 ];
 export default Gitmoji ;
