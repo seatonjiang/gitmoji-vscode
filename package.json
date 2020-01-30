@@ -1,121 +1,121 @@
 {
-	"name": "gitmoji-vscode",
-	"displayName": "Gitmoji",
-	"description": "An emoji tool for your git commit messages",
-	"version": "0.1.7",
-	"author": {
-		"name": "Seaton Jiang",
-		"email": "seaton@vtrois.com"
-	},
-	"publisher": "Vtrois",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/Vtrois/gitmoji-vscode/issues",
-		"email": "support@vtrois.com"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/Vtrois/gitmoji-vscode.git"
-	},
-	"homepage": "https://github.com/Vtrois/gitmoji-vscode/blob/master/README.md",
-	"engines": {
-		"vscode": "^1.40.0"
-	},
-	"keywords": [
-		"git",
-		"emoji",
-		"commit",
-		"messages"
-	],
-	"categories": [
-		"Other"
-	],
-	"icon": "images/icon.png",
-	"activationEvents": [
-		"onCommand:extension.Gitmoji"
-	],
-	"main": "./out/extension.js",
-	"contributes": {
-		"commands": [
-			{
-				"command": "extension.Gitmoji",
-				"title": "Gitmoji: An emoji tool for your git commit messages",
-				"icon": {
-					"dark": "images/icon_dark.svg",
-					"light": "images/icon_light.svg"
-				}
-			}
-		],
-		"menus": {
-			"scm/title": [
-				{
-					"when": "scmProvider == git",
-					"command": "extension.Gitmoji",
-					"group": "navigation"
-				}
-			]
-		},
-		"configuration": {
-			"title": "Gitmoji",
-			"properties": {
-				"gitmoji.outputType": {
-					"type": "string",
-					"default": "emoji",
-					"enum": [
-						"code",
-						"emoji"
-					],
-					"enumDescriptions": [
-						"Suitable for Github, etc.",
-						"Suitable for Github, Gitlab, Coding, etc."
-					],
-					"description": "Configure the type of Gitmoji output"
-				},
-				"gitmoji.additionalEmojis": {
-					"type": "array",
-					"default": [],
-					"items": {
-						"type": "object",
-						"title": "A gitmoji entry",
-						"properties": {
-							"emoji": {
-								"type": "string",
-								"description": "The emoji character"
-							},
-							"code": {
-								"type": "string",
-								"description": "The emoji's :code: (including both colons)"
-							},
-							"description": {
-								"type": "string",
-								"description": "The commit type described by this emoji"
-							},
-							"description_zh_cn": {
-								"type": "string",
-								"description": "A chinese (zh_CN) version of the description. If empty, the english description will be used.",
-								"default": ""
-							}
-						}
-					},
-					"description": "Additional emojis shown in the picker"
-				}
-			}
-		}
-	},
-	"scripts": {
-		"vscode:prepublish": "npm run compile",
-		"compile": "tsc -p ./",
-		"watch": "tsc -watch -p ./",
-		"pretest": "npm run compile"
-	},
-	"devDependencies": {
-		"@types/glob": "^7.1.1",
-		"@types/mocha": "^5.2.7",
-		"@types/node": "^12.11.7",
-		"@types/vscode": "^1.40.0",
-		"glob": "^7.1.5",
-		"mocha": "^6.2.2",
-		"typescript": "^3.6.4",
-		"tslint": "^5.20.0"
-	}
+    "name": "gitmoji-vscode",
+    "displayName": "Gitmoji",
+    "description": "An emoji tool for your git commit messages",
+    "version": "0.1.7",
+    "author": {
+        "name": "Seaton Jiang",
+        "email": "seaton@vtrois.com"
+    },
+    "publisher": "Vtrois",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Vtrois/gitmoji-vscode/issues",
+        "email": "support@vtrois.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Vtrois/gitmoji-vscode.git"
+    },
+    "homepage": "https://github.com/Vtrois/gitmoji-vscode/blob/master/README.md",
+    "engines": {
+        "vscode": "^1.40.0"
+    },
+    "keywords": [
+        "git",
+        "emoji",
+        "commit",
+        "messages"
+    ],
+    "categories": [
+        "Other"
+    ],
+    "icon": "images/icon.png",
+    "activationEvents": [
+        "onCommand:extension.Gitmoji"
+    ],
+    "main": "./out/extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.Gitmoji",
+                "title": "Gitmoji: An emoji tool for your git commit messages",
+                "icon": {
+                    "dark": "images/icon_dark.svg",
+                    "light": "images/icon_light.svg"
+                }
+            }
+        ],
+        "menus": {
+            "scm/title": [
+                {
+                    "when": "scmProvider == git",
+                    "command": "extension.Gitmoji",
+                    "group": "navigation"
+                }
+            ]
+        },
+        "configuration": {
+            "title": "Gitmoji",
+            "properties": {
+                "gitmoji.outputType": {
+                    "type": "string",
+                    "default": "emoji",
+                    "enum": [
+                        "code",
+                        "emoji"
+                    ],
+                    "enumDescriptions": [
+                        "Suitable for Github, etc.",
+                        "Suitable for Github, Gitlab, Coding, etc."
+                    ],
+                    "description": "Configure the type of Gitmoji output"
+                },
+                "gitmoji.additionalEmojis": {
+                    "type": "array",
+                    "default": [],
+                    "items": {
+                        "type": "object",
+                        "title": "A gitmoji entry",
+                        "properties": {
+                            "emoji": {
+                                "type": "string",
+                                "description": "The emoji character"
+                            },
+                            "code": {
+                                "type": "string",
+                                "description": "The emoji's :code: (including both colons)"
+                            },
+                            "description": {
+                                "type": "string",
+                                "description": "The commit type described by this emoji"
+                            },
+                            "description_zh_cn": {
+                                "type": "string",
+                                "description": "A chinese (zh_CN) version of the description. If empty, the english description will be used.",
+                                "default": ""
+                            }
+                        }
+                    },
+                    "description": "Additional emojis shown in the picker"
+                }
+            }
+        }
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "pretest": "npm run compile"
+    },
+    "devDependencies": {
+        "@types/glob": "^7.1.1",
+        "@types/mocha": "^5.2.7",
+        "@types/node": "^12.11.7",
+        "@types/vscode": "^1.40.0",
+        "glob": "^7.1.5",
+        "mocha": "^6.2.2",
+        "typescript": "^3.6.4",
+        "tslint": "^5.20.0"
+    }
 }
