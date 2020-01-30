@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.1.8] - 2020-01-30
+
+- Add configurable additionnal emojis
+
 ## [0.1.7] - 2020-01-13
 
 - Add space after emoji prefix

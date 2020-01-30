@@ -15,7 +15,7 @@ This project provides an easy solution for using [Gitmoji](https://github.com/ca
 
 ## Configuration
 
-**Notice**: If you use Gitlab or Coding, type emoji, if you use Github, you can type code or emoji.
+### Select output type
 
 * `outputType` - Configure the type of emoji output as needed. Default is `emoji`
 
@@ -35,6 +35,35 @@ Sample configuration:
 }
 ```
 
+**Notice**: If you use Gitlab or Coding, type emoji, if you use Github, you can type code or emoji.
+
+### Add configurable additionnal emojis
+
+* `additionalEmojis` - Add configurable additionnal emojis.
+
+Sample configuration:
+
+```json
+{
+    "gitmoji.additionalEmojis":[
+        {
+            "emoji": "🐳",
+            "code": ":whale:",
+            "description": "Work about Docker",
+            "description_zh_cn": "处理 Docker 相关的工作"
+        },
+        {
+            "emoji": "🚚",
+            "code": ":truck:",
+            "description": "Moving or renaming files",
+            "description_zh_cn": "移动或重命名文件"
+        }
+    ]
+}
+```
+
+**Notice**: `description_zh_cn` is a chinese (zh_CN) version of the description. If empty, the english description will be used.
+
 ## Acknowledgement
 
 Thanks to the contributors who inspired this project.
@@ -47,7 +76,7 @@ Thanks to the contributors who inspired this project.
 
 **Contributors:**
 
-* Fen、Will Stone
+* @Fen, @will-stone, @ewen-lbh
 
 ## License
 
