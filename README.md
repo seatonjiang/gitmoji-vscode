@@ -64,6 +64,32 @@ Sample configuration:
 
 **Notice**: `description_zh_cn` is a chinese (zh_CN) version of the description. If empty, the english description will be used.
 
+### Only use your additionnal emojis
+
+* `onlyUseAdditionalEmojis` - Use your additional emojis instead the ones from the extension.
+
+Sample configuration:
+
+```json
+{
+    "gitmoji.additionalEmojis":[
+        {
+            "emoji": "🐳",
+            "code": ":whale:",
+            "description": "Work about Docker",
+            "description_zh_cn": "处理 Docker 相关的工作"
+        },
+        {
+            "emoji": "🚚",
+            "code": ":truck:",
+            "description": "Moving or renaming files",
+            "description_zh_cn": "移动或重命名文件"
+        }
+    ],
+    "gitmoji.onlyUseAdditionalEmojis": true
+}
+```
+
 ## Acknowledgement
 
 Thanks to the contributors who inspired this project.

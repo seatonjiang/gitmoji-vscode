@@ -98,6 +98,11 @@
                         }
                     },
                     "description": "Additional emojis shown in the picker"
+                },
+                "gitmoji.onlyUseAdditionalEmojis": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Use your additional emojis instead the ones from the extension"
                 }
             }
         }

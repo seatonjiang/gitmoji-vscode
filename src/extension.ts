@@ -14,7 +14,15 @@ export function activate(context: vscode.ExtensionContext) {
         }
 
         let additionalEmojis: Array<any> = vscode.workspace.getConfiguration().get("gitmoji.additionalEmojis") || [];
-        let emojis = [...Gitmoji, ...additionalEmojis];
+        let emojis = [];
+        let onlyUseAdditionalEmojis: boolean | undefined = vscode.workspace.getConfiguration().get("gitmoji.onlyUseAdditionalEmojis");
+
+        if(onlyUseAdditionalEmojis === true ){
+            emojis = [...additionalEmojis];
+        } else {
+            emojis = [...Gitmoji, ...additionalEmojis];
+        }
+
         let items = [];
 
         if (language === "zh-cn") {
