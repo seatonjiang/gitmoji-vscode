@@ -102,7 +102,7 @@ Thanks to the contributors who inspired this project.
 
 **Contributors:**
 
-* @Fen, @will-stone, @ewen-lbh
+* @Fen, @will-stone, @ewen-lbh, @Hector-98
 
 ## License
 
