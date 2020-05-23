@@ -36,20 +36,24 @@
     ],
     "main": "./out/extension.js",
     "contributes": {
-        "commands": [{
-            "command": "extension.Gitmoji",
-            "title": "Gitmoji: An emoji tool for your git commit messages",
-            "icon": {
-                "dark": "images/icon_dark.svg",
-                "light": "images/icon_light.svg"
-            }
-        }],
-        "menus": {
-            "scm/title": [{
-                "when": "scmProvider == git",
+        "commands": [
+            {
                 "command": "extension.Gitmoji",
-                "group": "navigation"
-            }]
+                "title": "Gitmoji: An emoji tool for your git commit messages",
+                "icon": {
+                    "dark": "images/icon_dark.svg",
+                    "light": "images/icon_light.svg"
+                }
+            }
+        ],
+        "menus": {
+            "scm/title": [
+                {
+                    "when": "scmProvider == git",
+                    "command": "extension.Gitmoji",
+                    "group": "navigation"
+                }
+            ]
         },
         "configuration": {
             "title": "Gitmoji",
