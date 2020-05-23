@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.1.9] - 2020-05-13
+## [0.1.9] - 2020-05-23
 
 - Add option to only use the configurable additionnal emojis
 
