@@ -14,7 +14,15 @@ export function activate(context: vscode.ExtensionContext) {
         }
 
         let additionalEmojis: Array<any> = vscode.workspace.getConfiguration().get("gitmoji.additionalEmojis") || [];
-        let emojis = [...Gitmoji, ...additionalEmojis];
+        let emojis = [];
+        let onlyUseAdditionalEmojis: boolean | undefined = vscode.workspace.getConfiguration().get("gitmoji.onlyUseAdditionalEmojis");
+
+        if(onlyUseAdditionalEmojis === true) {
+            emojis = [...additionalEmojis];
+        } else {
+            emojis = [...Gitmoji, ...additionalEmojis];
+        }
+
         let items = [];
 
         if (language === "zh-cn") {
@@ -45,7 +53,7 @@ export function activate(context: vscode.ExtensionContext) {
                         return repository.rootUri.path === uri._rootUri.path;
                     });
                     if (selectedRepository) {
-                        if (outputType === "emoji"){
+                        if (outputType === "emoji") {
                             prefixCommit(selectedRepository, selected.emoji);
                         } else {
                             prefixCommit(selectedRepository, selected.code);
@@ -53,7 +61,7 @@ export function activate(context: vscode.ExtensionContext) {
                     }
                 } else {
                     for (let repo of git.repositories) {
-                        if (outputType === "emoji"){
+                        if (outputType === "emoji") {
                             prefixCommit(repo, selected.emoji);
                         } else {
                             prefixCommit(repo, selected.code);
@@ -67,7 +75,7 @@ export function activate(context: vscode.ExtensionContext) {
     context.subscriptions.push(disposable);
 }
 
-function getEnvLanguage(){
+function getEnvLanguage() {
     const language = vscode.env.language;
     return language;
 }

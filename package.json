@@ -2,7 +2,7 @@
     "name": "gitmoji-vscode",
     "displayName": "Gitmoji",
     "description": "An emoji tool for your git commit messages",
-    "version": "0.1.8",
+    "version": "0.1.9",
     "author": {
         "name": "Seaton Jiang",
         "email": "seaton@vtrois.com"
@@ -36,24 +36,20 @@
     ],
     "main": "./out/extension.js",
     "contributes": {
-        "commands": [
-            {
-                "command": "extension.Gitmoji",
-                "title": "Gitmoji: An emoji tool for your git commit messages",
-                "icon": {
-                    "dark": "images/icon_dark.svg",
-                    "light": "images/icon_light.svg"
-                }
+        "commands": [{
+            "command": "extension.Gitmoji",
+            "title": "Gitmoji: An emoji tool for your git commit messages",
+            "icon": {
+                "dark": "images/icon_dark.svg",
+                "light": "images/icon_light.svg"
             }
-        ],
+        }],
         "menus": {
-            "scm/title": [
-                {
-                    "when": "scmProvider == git",
-                    "command": "extension.Gitmoji",
-                    "group": "navigation"
-                }
-            ]
+            "scm/title": [{
+                "when": "scmProvider == git",
+                "command": "extension.Gitmoji",
+                "group": "navigation"
+            }]
         },
         "configuration": {
             "title": "Gitmoji",
@@ -98,6 +94,11 @@
                         }
                     },
                     "description": "Additional emojis shown in the picker"
+                },
+                "gitmoji.onlyUseAdditionalEmojis": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Use your additional emojis instead the ones from the extension"
                 }
             }
         }
