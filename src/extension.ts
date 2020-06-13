@@ -6,7 +6,7 @@ import { stringify } from 'querystring';
 
 export function activate(context: vscode.ExtensionContext) {
 
-    let disposable = vscode.commands.registerCommand('extension.Gitmoji.pickEmoji', (uri?) => {
+    let pickCommand = vscode.commands.registerCommand('extension.Gitmoji.pickEmoji', (uri?) => {
         const git = getGitExtension();
         const language = getEnvLanguage();
 
@@ -66,9 +66,9 @@ export function activate(context: vscode.ExtensionContext) {
         });
     });
 
-    context.subscriptions.push(disposable);
+    context.subscriptions.push(pickCommand);
 
-    let disposable2 = vscode.commands.registerCommand('extension.Gitmoji.insertMarkdownEmojiKey', () => {
+    let insertMarkdownEmojiKeyCommand = vscode.commands.registerCommand('extension.Gitmoji.insertMarkdownEmojiKey', () => {
         const editor = vscode.window.activeTextEditor;
         if (editor) {
             const document = editor.document
@@ -79,7 +79,7 @@ export function activate(context: vscode.ExtensionContext) {
         }
     });
 
-    context.subscriptions.push(disposable2);
+    context.subscriptions.push(insertMarkdownEmojiKeyCommand);
 }
 
 function getEnvLanguage() {
