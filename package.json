@@ -122,5 +122,9 @@
         "mocha": "^6.2.2",
         "typescript": "^3.6.4",
         "tslint": "^5.20.0"
+    },
+    "dependencies": {
+        "@types/markdown-table": "^2.0.0",
+        "markdown-table": "^2.0.0"
     }
 }
