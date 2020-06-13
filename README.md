@@ -6,6 +6,8 @@
 
 This project provides an easy solution for using [Gitmoji](https://github.com/carloscuesta/gitmoji) from VSCode Extension. gitmoji-vscode solves the hassle of searching through the gitmoji list. Includes a bunch of options you can play with! 🎉
 
+This extension also includes a command to insert a markdown table of _your_ emojis and their meanings, so that you can clearly define in your `CONTRIBUTING.md` how contributors should name their commits
+
 ## Install
 
 1. Open [Visual Studio Code](https://code.visualstudio.com/)
