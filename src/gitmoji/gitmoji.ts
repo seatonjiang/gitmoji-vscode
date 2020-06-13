@@ -408,4 +408,4 @@ let Gitmoji: Array<Emoji> = [
         "description_zh_cn": "需要清理的弃用代码"
     }
 ];
-export default Gitmoji ;
+export { Gitmoji, Emoji } ;

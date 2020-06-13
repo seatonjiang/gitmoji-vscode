@@ -32,25 +32,30 @@
     ],
     "icon": "images/icon.png",
     "activationEvents": [
-        "onCommand:extension.Gitmoji"
+        "onCommand:extension.Gitmoji.pickEmoji",
+        "onCommand:extension.Gitmoji.insertMarkdownEmojiKey"
     ],
     "main": "./out/extension.js",
     "contributes": {
         "commands": [
             {
-                "command": "extension.Gitmoji",
-                "title": "Gitmoji: An emoji tool for your git commit messages",
+                "command": "extension.Gitmoji.pickEmoji",
+                "title": "Gitmoji: Add emoji to commit message",
                 "icon": {
                     "dark": "images/icon_dark.svg",
                     "light": "images/icon_light.svg"
                 }
+            },
+            {
+                "command": "extension.Gitmoji.insertMarkdownEmojiKey",
+                "title": "Gitmoji: Insert markdown emoji key table"
             }
         ],
         "menus": {
             "scm/title": [
                 {
                     "when": "scmProvider == git",
-                    "command": "extension.Gitmoji",
+                    "command": "extension.Gitmoji.pickEmoji",
                     "group": "navigation"
                 }
             ]
@@ -120,8 +125,8 @@
         "@types/vscode": "^1.40.0",
         "glob": "^7.1.5",
         "mocha": "^6.2.2",
-        "typescript": "^3.6.4",
-        "tslint": "^5.20.0"
+        "tslint": "^5.20.0",
+        "typescript": "^3.6.4"
     },
     "dependencies": {
         "@types/markdown-table": "^2.0.0",

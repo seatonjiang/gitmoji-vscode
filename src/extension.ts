@@ -1,10 +1,13 @@
 import * as vscode from 'vscode';
 import { GitExtension, Repository } from './api/git';
-import Gitmoji from './gitmoji/gitmoji';
+import { Gitmoji, Emoji } from './gitmoji/gitmoji';
+const table = require('markdown-table')
+import { stringify } from 'querystring';
 
 export function activate(context: vscode.ExtensionContext) {
 
-    let disposable = vscode.commands.registerCommand('extension.Gitmoji', (uri?) => {
+    let disposable = vscode.commands.registerCommand('extension.Gitmoji.pickEmoji', (uri?) => {
+        vscode.window.showInformationMessage('YES! YES! YES! YES! YES! YES! YES! YES! ')
         const git = getGitExtension();
         const language = getEnvLanguage();
 
@@ -13,32 +16,24 @@ export function activate(context: vscode.ExtensionContext) {
             return;
         }
 
-        let additionalEmojis: Array<any> = vscode.workspace.getConfiguration().get("gitmoji.additionalEmojis") || [];
-        let emojis = [];
-        let onlyUseAdditionalEmojis: boolean | undefined = vscode.workspace.getConfiguration().get("gitmoji.onlyUseAdditionalEmojis");
-
-        if(onlyUseAdditionalEmojis === true) {
-            emojis = [...additionalEmojis];
-        } else {
-            emojis = [...Gitmoji, ...additionalEmojis];
-        }
+        let emojis = getEmojis()
 
         let items = [];
 
         if (language === "zh-cn") {
             for (let i = 0; i < emojis.length; i++) {
                 items.push({
-                label: `${emojis[i].emoji} ${emojis[i].description_zh_cn || emojis[i].description}`,
-                code: emojis[i].code,
-                emoji: emojis[i].emoji
+                    label: `${emojis[i].emoji} ${emojis[i].description_zh_cn || emojis[i].description}`,
+                    code: emojis[i].code,
+                    emoji: emojis[i].emoji
                 });
             }
         } else {
             for (let i = 0; i < emojis.length; i++) {
                 items.push({
-                label: `${emojis[i].emoji} ${emojis[i].description}`,
-                code: emojis[i].code,
-                emoji: emojis[i].emoji
+                    label: `${emojis[i].emoji} ${emojis[i].description}`,
+                    code: emojis[i].code,
+                    emoji: emojis[i].emoji
                 });
             }
         }
@@ -73,6 +68,19 @@ export function activate(context: vscode.ExtensionContext) {
     });
 
     context.subscriptions.push(disposable);
+
+    let disposable2 = vscode.commands.registerCommand('extension.Gitmoji.insertMarkdownEmojiKey', () => {
+        const editor = vscode.window.activeTextEditor;
+        if (editor) {
+            const document = editor.document
+            const position = editor.selection.active
+            editor.edit(editBuilder => {
+                editBuilder.insert(position, generateMarkdownEmojiKey(getEmojis()))
+            })
+        }
+    });
+
+    context.subscriptions.push(disposable2);
 }
 
 function getEnvLanguage() {
@@ -90,4 +98,27 @@ function getGitExtension() {
     return gitExtension && gitExtension.getAPI(1);
 }
 
-export function deactivate() {}
+function getEmojis(): Array<any> {
+    let additionalEmojis: Array<any> = vscode.workspace.getConfiguration().get("gitmoji.additionalEmojis") || [];
+    let emojis = [];
+    let onlyUseAdditionalEmojis: boolean | undefined = vscode.workspace.getConfiguration().get("gitmoji.onlyUseAdditionalEmojis");
+
+    if (onlyUseAdditionalEmojis === true) {
+        emojis = [...additionalEmojis];
+    } else {
+        emojis = [...Gitmoji, ...additionalEmojis];
+    }
+    return emojis
+}
+
+function generateMarkdownEmojiKey(emojis: Array<Emoji>): string {
+    let emojiKey: string[][] = [
+        ['Emoji', 'Meaning']
+    ]
+    emojis.forEach(emoji => {
+        emojiKey.push([emoji.emoji, emoji.description])
+    });
+    return table(emojiKey)
+}
+
+export function deactivate() { }
