@@ -7,7 +7,6 @@ import { stringify } from 'querystring';
 export function activate(context: vscode.ExtensionContext) {
 
     let disposable = vscode.commands.registerCommand('extension.Gitmoji.pickEmoji', (uri?) => {
-        vscode.window.showInformationMessage('YES! YES! YES! YES! YES! YES! YES! YES! ')
         const git = getGitExtension();
         const language = getEnvLanguage();
 
