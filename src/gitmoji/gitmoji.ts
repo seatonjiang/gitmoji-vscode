@@ -57,7 +57,7 @@ let Gitmoji: Array<Emoji> = [
     emoji: "💄",
     code: ":lipstick:",
     description: "Adding or updating the UI and style files",
-    description_zh_cn: "新增/更新 UI 和样式文件",
+    description_zh_cn: "新增或更新 UI 和样式文件",
   },
   {
     emoji: "🎉",
@@ -69,7 +69,7 @@ let Gitmoji: Array<Emoji> = [
     emoji: "✅",
     code: ":white_check_mark:",
     description: "Adding or updating tests",
-    description_zh_cn: "新增/更新测试",
+    description_zh_cn: "新增或更新测试",
   },
   {
     emoji: "🔒",
@@ -153,13 +153,13 @@ let Gitmoji: Array<Emoji> = [
     emoji: "👷",
     code: ":construction_worker:",
     description: "Adding or updating CI build system",
-    description_zh_cn: "新增/更新 CI 构建系统",
+    description_zh_cn: "新增或更新 CI 构建系统",
   },
   {
     emoji: "📈",
     code: ":chart_with_upwards_trend:",
     description: "Adding or updating analytics or tracking code.",
-    description_zh_cn: "新增/更新分析或跟踪代码",
+    description_zh_cn: "新增或更新分析或跟踪代码",
   },
   {
     emoji: "♻️",
@@ -177,7 +177,7 @@ let Gitmoji: Array<Emoji> = [
     emoji: "➕",
     code: ":heavy_plus_sign:",
     description: "Adding or updating a dependency",
-    description_zh_cn: "新增/更新一个依赖",
+    description_zh_cn: "新增或更新一个依赖",
   },
   {
     emoji: "➖",
@@ -225,7 +225,7 @@ let Gitmoji: Array<Emoji> = [
     emoji: "📦",
     code: ":package:",
     description: "Adding or updating compiled files or packages",
-    description_zh_cn: "新增/更新已编译的文件或包",
+    description_zh_cn: "新增或更新已编译的文件或包",
   },
   {
     emoji: "👽",
@@ -243,7 +243,7 @@ let Gitmoji: Array<Emoji> = [
     emoji: "📄",
     code: ":page_facing_up:",
     description: "Adding or updating license",
-    description_zh_cn: "新增/更新 License",
+    description_zh_cn: "新增或更新 License",
   },
   {
     emoji: "💥",
@@ -255,7 +255,7 @@ let Gitmoji: Array<Emoji> = [
     emoji: "🍱",
     code: ":bento:",
     description: "Adding or updating assets",
-    description_zh_cn: "新增/更新资源",
+    description_zh_cn: "新增或更新资源",
   },
   {
     emoji: "👌",
@@ -285,7 +285,7 @@ let Gitmoji: Array<Emoji> = [
     emoji: "💬",
     code: ":speech_balloon:",
     description: "Adding or updating text and literals",
-    description_zh_cn: "新增/更新文本和文字",
+    description_zh_cn: "新增或更新文本和文字",
   },
   {
     emoji: "🗃",
@@ -297,7 +297,7 @@ let Gitmoji: Array<Emoji> = [
     emoji: "🔊",
     code: ":loud_sound:",
     description: "Adding or updating logs",
-    description_zh_cn: "新增/更新日志",
+    description_zh_cn: "新增或更新日志",
   },
   {
     emoji: "🔇",
@@ -309,7 +309,7 @@ let Gitmoji: Array<Emoji> = [
     emoji: "👥",
     code: ":busts_in_silhouette:",
     description: "Adding or updating contributor(s)",
-    description_zh_cn: "新增/更新贡献者",
+    description_zh_cn: "新增或更新贡献者",
   },
   {
     emoji: "🚸",
@@ -339,19 +339,19 @@ let Gitmoji: Array<Emoji> = [
     emoji: "🥚",
     code: ":egg:",
     description: "Adding or updating an easter egg",
-    description_zh_cn: "新增/更新一个彩蛋",
+    description_zh_cn: "新增或更新一个彩蛋",
   },
   {
     emoji: "🙈",
     code: ":see_no_evil:",
     description: "Adding or updating a .gitignore file",
-    description_zh_cn: "新增/更新 .gitignore 文件",
+    description_zh_cn: "新增或更新 .gitignore 文件",
   },
   {
     emoji: "📸",
     code: ":camera_flash:",
     description: "Adding or updating snapshots",
-    description_zh_cn: "新增/更新快照",
+    description_zh_cn: "新增或更新快照",
   },
   {
     emoji: "⚗",
@@ -375,13 +375,13 @@ let Gitmoji: Array<Emoji> = [
     emoji: "🏷️",
     code: ":label:",
     description: "Adding or updating types (Flow, TypeScript)",
-    description_zh_cn: "新增/更新类型（Flow、TypeScript）",
+    description_zh_cn: "新增或更新类型（Flow、TypeScript）",
   },
   {
     emoji: "🌱",
     code: ":seedling:",
     description: "Adding or updating seed files",
-    description_zh_cn: "新增/更新 SEED 文件",
+    description_zh_cn: "新增或更新 SEED 文件",
   },
   {
     emoji: "🚩",
@@ -393,7 +393,7 @@ let Gitmoji: Array<Emoji> = [
     emoji: "💫",
     code: ":dizzy:",
     description: "Adding or updating animations and transitions",
-    description_zh_cn: "新增/更新动画和过场",
+    description_zh_cn: "新增或更新动画和过场",
   },
   {
     emoji: "🥅",
