@@ -188,8 +188,8 @@ let Gitmoji: Array<Emoji> = [
   {
     emoji: "🔧",
     code: ":wrench:",
-    description: "Changing configuration files",
-    description_zh_cn: "改变配置文件",
+    description: "Adding or updating configuration files",
+    description_zh_cn: "新增或更新配置文件",
   },
   {
     emoji: "🌐",
