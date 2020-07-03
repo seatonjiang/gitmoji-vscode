@@ -192,6 +192,12 @@ let Gitmoji: Array<Emoji> = [
     description_zh_cn: "新增或更新配置文件",
   },
   {
+    emoji: "🔨",
+    code: ":hammer:",
+    description: "Adding or updating build scripts",
+    description_zh_cn: "新增或更新构建脚本",
+  },
+  {
     emoji: "🌐",
     code: ":globe_with_meridians:",
     description: "Internationalization and localization",
