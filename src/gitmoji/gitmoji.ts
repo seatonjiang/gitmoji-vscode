@@ -272,8 +272,8 @@ let Gitmoji: Array<Emoji> = [
   {
     emoji: "💡",
     code: ":bulb:",
-    description: "Documenting source code",
-    description_zh_cn: "为源代码编写文档",
+    description: "Adding or updating comments in source code",
+    description_zh_cn: "在源代码中添加或更新注释",
   },
   {
     emoji: "🍻",
