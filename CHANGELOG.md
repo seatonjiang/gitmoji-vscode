@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.2.0] - 2020-07-03
+
+- Add build scripts emojis
+- Clarify bulb description
+- Update wrench description
+- Specify some descriptions
+- Modify the installation method
+- Change code indentation
+
 ## [0.1.9] - 2020-05-23
 
 - Add option to only use the configurable additionnal emojis
