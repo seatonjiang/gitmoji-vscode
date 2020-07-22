@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.2.1] - 2020-07-22
+
+- Fix icons to match new style
+- Change all the verbs to infinitive
+
 ## [0.2.0] - 2020-07-03
 
 - Add build scripts emojis
