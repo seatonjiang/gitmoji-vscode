@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.2.2] - 2020-08-30
+
+- Sync with official
+- Fix lower case "Remove"
+
 ## [0.2.1] - 2020-07-22
 
 - Fix icons to match new style
