@@ -47,16 +47,16 @@ Sample configuration:
 {
   "gitmoji.additionalEmojis": [
     {
-      "emoji": "🐳",
-      "code": ":whale:",
-      "description": "Work about Docker",
-      "description_zh_cn": "处理 Docker 相关的工作"
+      "emoji": "🐛",
+      "code": ":bug:",
+      "description": "Fix a bug.",
+      "description_zh_cn": "修复 BUG"
     },
     {
-      "emoji": "🚚",
-      "code": ":truck:",
-      "description": "Moving or renaming files",
-      "description_zh_cn": "移动或重命名文件"
+      "emoji": "🚑",
+      "code": ":ambulance:",
+      "description": "Critical hotfix.",
+      "description_zh_cn": "紧急热修复"
     }
   ]
 }
@@ -72,37 +72,9 @@ Sample configuration:
 
 ```json
 {
-  "gitmoji.additionalEmojis": [
-    {
-      "emoji": "🐳",
-      "code": ":whale:",
-      "description": "Work about Docker",
-      "description_zh_cn": "处理 Docker 相关的工作"
-    },
-    {
-      "emoji": "🚚",
-      "code": ":truck:",
-      "description": "Moving or renaming files",
-      "description_zh_cn": "移动或重命名文件"
-    }
-  ],
   "gitmoji.onlyUseAdditionalEmojis": true
 }
 ```
-
-## Acknowledgement
-
-Thanks to the contributors who inspired this project.
-
-**Project:**
-
-- [Gitmoji](https://github.com/carloscuesta/gitmoji)
-
-- [Git Emoji Commit](https://github.com/maixiaojie/git-emoji)
-
-**Contributors:**
-
-- @Fen, @will-stone, @ewen-lbh, @Hector-98
 
 ## License
 
