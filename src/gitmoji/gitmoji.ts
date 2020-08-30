@@ -392,7 +392,7 @@ let Gitmoji: Array<Emoji> = [
   {
     emoji: "🚩",
     code: ":triangular_flag_on_post:",
-    description: "Add, update, or Remove feature flags",
+    description: "Add, update, or remove feature flags",
     description_zh_cn: "添加、更新或删除特性标志",
   },
   {
