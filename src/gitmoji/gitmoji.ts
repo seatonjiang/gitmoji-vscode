@@ -43,9 +43,9 @@ let Gitmoji: Array<Emoji> = [
   },
   {
     emoji: "📝",
-    code: ":pencil:",
-    description: "Write docs.",
-    description_zh_cn: "编辑文档",
+    code: ":memo:",
+    description: "Add or update documentation.",
+    description_zh_cn: "添加或更新文件",
   },
   {
     emoji: "🚀",
@@ -158,8 +158,8 @@ let Gitmoji: Array<Emoji> = [
   {
     emoji: "🔨",
     code: ":hammer:",
-    description: "Add or update build scripts.",
-    description_zh_cn: "新增或更新构建脚本",
+    description: "Add or update development scripts.",
+    description_zh_cn: "新增或更新开发脚本",
   },
   {
     emoji: "🌐",
@@ -320,7 +320,7 @@ let Gitmoji: Array<Emoji> = [
   {
     emoji: "⚗",
     code: ":alembic:",
-    description: "Experiment new things",
+    description: "Perform experiments.",
     description_zh_cn: "试验新功能",
   },
   {
@@ -332,8 +332,8 @@ let Gitmoji: Array<Emoji> = [
   {
     emoji: "🏷️",
     code: ":label:",
-    description: "Add or update types (Flow, TypeScript).",
-    description_zh_cn: "新增或更新类型（Flow、TypeScript）",
+    description: "Add or update types.",
+    description_zh_cn: "新增或更新类型",
   },
   {
     emoji: "🌱",
@@ -350,7 +350,7 @@ let Gitmoji: Array<Emoji> = [
   {
     emoji: "🥅",
     code: ":goal_net:",
-    description: "Catching errors.",
+    description: "Catch errors.",
     description_zh_cn: "捕获异常",
   },
   {
@@ -362,8 +362,8 @@ let Gitmoji: Array<Emoji> = [
   {
     emoji: "🗑",
     code: ":wastebasket:",
-    description: "Deprecating code that needs to be cleaned up.",
-    description_zh_cn: "需要清理的弃用代码",
+    description: "Deprecate code that needs to be cleaned up.",
+    description_zh_cn: "需要清理的废弃代码",
   },
 ];
 export default Gitmoji;
