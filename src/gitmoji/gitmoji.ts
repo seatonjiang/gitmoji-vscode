@@ -242,7 +242,7 @@ let Gitmoji: Array<Emoji> = [
   {
     emoji: "🍻",
     code: ":beers:",
-    description: "Writing code drunkenly.",
+    description: "Write code drunkenly.",
     description_zh_cn: "醉醺醺的写代码",
   },
   {
