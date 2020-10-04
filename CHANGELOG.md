@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.2.4] - 2020-10-04
+
+- Sync with official
+- Replace default github branch
+- Update VSCode api
+
 ## [0.2.3] - 2020-09-23
 
 - Sync with official
