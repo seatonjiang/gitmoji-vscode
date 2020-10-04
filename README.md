@@ -1,6 +1,6 @@
 # gitmoji-vscode
 
-![About](https://raw.githubusercontent.com/vtrois/gitmoji-vscode/master/images/about.gif)
+![About](https://raw.githubusercontent.com/vtrois/gitmoji-vscode/main/images/about.gif)
 
 ## About
 
@@ -21,11 +21,11 @@ This project provides an easy solution for using [Gitmoji](https://github.com/ca
 
 For emoji type:
 
-![emoji](https://raw.githubusercontent.com/vtrois/gitmoji-vscode/master/images/emoji.png)
+![emoji](https://raw.githubusercontent.com/vtrois/gitmoji-vscode/main/images/emoji.png)
 
 For code type:
 
-![code](https://raw.githubusercontent.com/vtrois/gitmoji-vscode/master/images/code.png)
+![code](https://raw.githubusercontent.com/vtrois/gitmoji-vscode/main/images/code.png)
 
 Sample configuration:
 
@@ -78,4 +78,4 @@ Sample configuration:
 
 ## License
 
-The code is available under the [MIT](https://github.com/vtrois/gitmoji-vscode/blob/master/LICENSE) license.
+The code is available under the [MIT](https://github.com/vtrois/gitmoji-vscode/blob/main/LICENSE) license.

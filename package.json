@@ -16,7 +16,7 @@
     "type": "git",
     "url": "git+https://github.com/vtrois/gitmoji-vscode.git"
   },
-  "homepage": "https://github.com/vtrois/gitmoji-vscode/blob/master/README.md",
+  "homepage": "https://github.com/vtrois/gitmoji-vscode/blob/main/README.md",
   "engines": {
     "vscode": "^1.40.0"
   },
