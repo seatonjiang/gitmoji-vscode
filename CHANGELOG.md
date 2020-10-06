@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.0.0] - 2020-10-06
+
+- Official version release
+- Sync with official
+
 ## [0.2.4] - 2020-10-04
 
 - Sync with official
