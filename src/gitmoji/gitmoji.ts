@@ -365,5 +365,11 @@ let Gitmoji: Array<Emoji> = [
     description: "Deprecate code that needs to be cleaned up",
     description_zh_cn: "需要清理的废弃代码",
   },
+  {
+    emoji: "🛂",
+    code: ":passport_control:",
+    description: "Work on code related to authorization, roles and permissions",
+    description_zh_cn: "编写与授权、角色和权限有关的代码"
+  },
 ];
 export default Gitmoji;

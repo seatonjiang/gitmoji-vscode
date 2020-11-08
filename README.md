@@ -1,6 +1,6 @@
 # gitmoji-vscode
 
-![About](https://cdn.jsdelivr.net/gh/vtrois/gitmoji-vscode@1.0.0/images/about.gif)
+![About](https://cdn.jsdelivr.net/gh/vtrois/gitmoji-vscode@1/images/about.gif)
 
 ## About
 
@@ -21,11 +21,11 @@ This project provides an easy solution for using [Gitmoji](https://github.com/ca
 
 For emoji type:
 
-![emoji](https://cdn.jsdelivr.net/gh/vtrois/gitmoji-vscode@1.0.0/images/emoji.png)
+![emoji](https://cdn.jsdelivr.net/gh/vtrois/gitmoji-vscode@1/images/emoji.png)
 
 For code type:
 
-![code](https://cdn.jsdelivr.net/gh/vtrois/gitmoji-vscode@1.0.0/images/code.png)
+![code](https://cdn.jsdelivr.net/gh/vtrois/gitmoji-vscode@1/images/code.png)
 
 Sample configuration:
 
