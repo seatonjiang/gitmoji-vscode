@@ -102,6 +102,11 @@
           "type": "boolean",
           "default": false,
           "description": "Use your additional emojis instead the ones from the extension"
+        },
+        "gitmoji.showEmojiCode": {
+          "type": "boolean",
+          "default": false,
+          "description": "Enable searching gitmojis by emoji code (example: ambulance will return hotfix)"
         }
       }
     }
