@@ -17,6 +17,9 @@ export function activate(context: vscode.ExtensionContext) {
       let additionalEmojis: Array<any> =
         vscode.workspace.getConfiguration().get("gitmoji.additionalEmojis") ||
         [];
+
+      const showEmojiCode: boolean | undefined = vscode.workspace.getConfiguration().get("gitmoji.showEmojiCode")
+
       let emojis = [];
       let onlyUseAdditionalEmojis:
         | boolean
@@ -30,27 +33,26 @@ export function activate(context: vscode.ExtensionContext) {
         emojis = [...Gitmoji, ...additionalEmojis];
       }
 
-      let items = [];
-
-      if (language === "zh-cn") {
-        for (let i = 0; i < emojis.length; i++) {
-          items.push({
-            label: `${emojis[i].emoji} ${
-              emojis[i].description_zh_cn || emojis[i].description
-            }`,
-            code: emojis[i].code,
-            emoji: emojis[i].emoji,
-          });
+      const items = emojis.map((emojiObj) => {
+        const { 
+          description, 
+          description_zh_cn,
+          code: _code,
+          emoji
+        } = emojiObj
+        const displayDescription = language === "zh-cn"
+          ? description_zh_cn || description
+          : description
+        const code = showEmojiCode
+          ? _code
+          : ''
+        const label = `${emoji} ${displayDescription} ${code}`
+        return {
+          label,
+          code,
+          emoji
         }
-      } else {
-        for (let i = 0; i < emojis.length; i++) {
-          items.push({
-            label: `${emojis[i].emoji} ${emojis[i].description}`,
-            code: emojis[i].code,
-            emoji: emojis[i].emoji,
-          });
-        }
-      }
+      })
 
       vscode.window.showQuickPick(items).then(function (selected) {
         if (selected) {
