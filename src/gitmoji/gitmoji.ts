@@ -371,5 +371,11 @@ let Gitmoji: Array<Emoji> = [
     description: "Work on code related to authorization, roles and permissions",
     description_zh_cn: "编写与授权、角色和权限有关的代码"
   },
+  {
+    emoji: "🩹",
+    code: ":adhesive_bandage:",
+    description: "Simple fix for a non-critical issue",
+    description_zh_cn: "简单解决非关键问题"
+  },
 ];
 export default Gitmoji;
