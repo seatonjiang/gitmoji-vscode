@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.0.2] - 2020-11-25
+
+- Sync with official
+- Add the ability to search for gitmoji by emoji code
+
 ## [1.0.1] - 2020-11-08
 
 - Sync with official

@@ -76,6 +76,18 @@ Sample configuration:
 }
 ```
 
+### Search gitmoji by emoji code
+
+- `showEmojiCode` - Enable searching gitmojis by emoji code (example: ambulance will return hotfix).
+
+Sample configuration:
+
+```json
+{
+  "gitmoji.showEmojiCode": true
+}
+```
+
 ## License
 
 The code is available under the [MIT](https://github.com/vtrois/gitmoji-vscode/blob/main/LICENSE) license.
