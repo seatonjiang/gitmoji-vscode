@@ -37,16 +37,16 @@ export function activate(context: vscode.ExtensionContext) {
         const { 
           description, 
           description_zh_cn,
-          code: _code,
+          code,
           emoji
         } = emojiObj
         const displayDescription = language === "zh-cn"
           ? description_zh_cn || description
           : description
-        const code = showEmojiCode
-          ? _code
+        const displayCode = showEmojiCode
+          ? code
           : ''
-        const label = `${emoji} ${displayDescription} ${code}`
+        const label = `${emoji} ${displayDescription} ${displayCode}`
         return {
           label,
           code,
