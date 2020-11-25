@@ -375,7 +375,7 @@ let Gitmoji: Array<Emoji> = [
     emoji: "🩹",
     code: ":adhesive_bandage:",
     description: "Simple fix for a non-critical issue",
-    description_zh_cn: "简单解决非关键问题"
+    description_zh_cn: "简单修复非关键性问题"
   },
 ];
 export default Gitmoji;
