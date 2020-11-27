@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.0.3] - 2020-11-27
+
+- Fix emoji code not showing up in source control
+
 ## [1.0.2] - 2020-11-25
 
 - Sync with official
