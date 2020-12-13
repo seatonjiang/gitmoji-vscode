@@ -87,7 +87,7 @@ let Gitmoji: Array<Emoji> = [
     emoji: "🚨",
     code: ":rotating_light:",
     description: "Fix compiler / linter warnings",
-    description_zh_cn: "修复编译器/链接器警告",
+    description_zh_cn: "修复编译器 / 链接器警告",
   },
   {
     emoji: "🚧",
@@ -279,7 +279,7 @@ let Gitmoji: Array<Emoji> = [
     emoji: "🚸",
     code: ":children_crossing:",
     description: "Improve user experience / usability",
-    description_zh_cn: "提高用户体验/可用性",
+    description_zh_cn: "提高用户体验 / 可用性",
   },
   {
     emoji: "🏗",
@@ -369,13 +369,19 @@ let Gitmoji: Array<Emoji> = [
     emoji: "🛂",
     code: ":passport_control:",
     description: "Work on code related to authorization, roles and permissions",
-    description_zh_cn: "编写与授权、角色和权限有关的代码"
+    description_zh_cn: "编写与授权、角色和权限有关的代码",
   },
   {
     emoji: "🩹",
     code: ":adhesive_bandage:",
     description: "Simple fix for a non-critical issue",
-    description_zh_cn: "简单修复非关键性问题"
+    description_zh_cn: "简单修复非关键性问题",
+  },
+  {
+    emoji: "🧐",
+    code: ":monocle_face:",
+    description: "Data exploration / inspection",
+    description_zh_cn: "数据探索 / 数据巡检",
   },
 ];
 export default Gitmoji;
