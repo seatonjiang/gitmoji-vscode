@@ -1,6 +1,6 @@
-# gitmoji-vscode
-
 ![About](https://cdn.jsdelivr.net/gh/vtrois/gitmoji-vscode@1/images/about.gif)
+
+English | [简体中文](README.zh-CN.md)
 
 ## About
 
