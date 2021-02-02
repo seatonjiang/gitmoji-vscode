@@ -4,7 +4,7 @@
 
 ## 关于扩展
 
-此扩展是为了在 VSCode 中更方便的使用 [Gitmoji](https://github.com/carloscuesta/gitmoji)，解决了搜索 Gitmoji 列表的烦恼，并且扩展包含了很多自定义配置! 🎉
+此扩展是为了在 VSCode 中更方便的使用 [Gitmoji](https://github.com/carloscuesta/gitmoji)，解决了搜索 Gitmoji 列表的烦恼，并且扩展包含了很多自定义配置！
 
 ## 安装扩展
 
@@ -13,7 +13,7 @@
 3. 输入 `Gitmoji` 寻找此扩展；
 4. 点击 `安装` 按钮，然后点击 `启用` 按钮即可。
 
-**提示**: 也可以直接在 Marketplace 中找到 [Gitmoji](https://marketplace.visualstudio.com/items?itemName=Vtrois.gitmoji-vscode)，然后点击 `Install` 即可。
+**提示**：也可以直接在 Marketplace 中找到 [Gitmoji](https://marketplace.visualstudio.com/items?itemName=Vtrois.gitmoji-vscode)，然后点击 `Install` 即可。
 
 ## 配置扩展
 
@@ -21,15 +21,15 @@
 
 - `outputType` - 根据需要配置表情符号的输出类型，默认为 `emoji`。
 
-emoji 模式的例子:
+emoji 模式的例子：
 
 ![emoji](https://cdn.jsdelivr.net/gh/vtrois/gitmoji-vscode@1/images/emoji.png)
 
-code 模式的例子:
+code 模式的例子：
 
 ![code](https://cdn.jsdelivr.net/gh/vtrois/gitmoji-vscode@1/images/code.png)
 
-示例配置:
+示例配置：
 
 ```json
 {
@@ -37,13 +37,13 @@ code 模式的例子:
 }
 ```
 
-**提示**: 如果在 Gitlab 或者 Coding 中使用，需要选择「code」模式；如果在 Github 中使用，可以随意选择「emoji」或「code」模式。
+**提示**：如果在 Gitlab 或者 Coding 中使用，需要选择「code」模式；如果在 Github 中使用，可以随意选择「emoji」或「code」模式。
 
 ### 添加自定义表情符号
 
 - `additionalEmojis` - 根据需要添加自定义表情符号。
 
-示例配置:
+示例配置：
 
 ```json
 {
@@ -64,13 +64,13 @@ code 模式的例子:
 }
 ```
 
-**提示**: `description_zh_cn` 是中文模式加载的内容，改选项是可选的，如果留空，将默认显示 `description` 中的内容。
+**提示**：`description_zh_cn` 是中文模式加载的内容，改选项是可选的，如果留空，将默认显示 `description` 中的内容。
 
 ### 仅使用自定义表情符号
 
 - `onlyUseAdditionalEmojis` - 仅使用自定义添加的表情符号，而不使用扩展中自带的表情符号，该功能默认不开启。
 
-示例配置:
+示例配置：
 
 ```json
 {
@@ -82,7 +82,7 @@ code 模式的例子:
 
 - `showEmojiCode` - 开启通过 emoji 简码搜索表情符号，例如搜索 ambulance 会找到 🚑 ，该功能默认不开启。
 
-示例配置:
+示例配置：
 
 ```json
 {
