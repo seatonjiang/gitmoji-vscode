@@ -383,5 +383,11 @@ let Gitmoji: Array<Emoji> = [
     description: "Data exploration / inspection",
     description_zh_cn: "数据探索 / 数据巡检",
   },
+  {
+    emoji: "⚰️",
+    code: ":coffin:",
+    description: "Remove dead code",
+    description_zh_cn: "删除无效代码",
+  },
 ];
 export default Gitmoji;
