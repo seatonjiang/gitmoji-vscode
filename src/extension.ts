@@ -95,7 +95,9 @@ function getEnvLanguage() {
 }
 
 function prefixCommit(repository: Repository, prefix: String) {
-  repository.inputBox.value = `${prefix} ${repository.inputBox.value}`;
+  const { value } = repository.inputBox;
+  const startsWithEmoji = !!value.match(/^\p{Extended_Pictographic}/u); // Emoji regex
+  repository.inputBox.value = `${prefix} ${startsWithEmoji ? value.slice(1) : value}`;
 }
 
 function getGitExtension() {
