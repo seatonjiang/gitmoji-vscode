@@ -2,7 +2,7 @@
 
 ## [1.0.6] - 2021-05-08
 
-Render unicode gitmojis as image by default
+- Render unicode gitmojis as image by default
 
 ## [1.0.5] - 2021-03-13
 
