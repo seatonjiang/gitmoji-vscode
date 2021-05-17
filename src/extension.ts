@@ -18,7 +18,11 @@ export function activate(context: vscode.ExtensionContext) {
         vscode.workspace.getConfiguration().get("gitmoji.additionalEmojis") ||
         [];
 
-      const showEmojiCode: boolean | undefined = vscode.workspace.getConfiguration().get("gitmoji.showEmojiCode")
+      const showEmojiCode:
+        | boolean
+        | undefined = vscode.workspace
+        .getConfiguration()
+        .get("gitmoji.showEmojiCode");
 
       let emojis = [];
       let onlyUseAdditionalEmojis:
@@ -34,25 +38,17 @@ export function activate(context: vscode.ExtensionContext) {
       }
 
       const items = emojis.map((emojiObj) => {
-        const { 
-          description, 
-          description_zh_cn,
-          code,
-          emoji
-        } = emojiObj
-        const displayDescription = language === "zh-cn"
-          ? description_zh_cn || description
-          : description
-        const displayCode = showEmojiCode
-          ? code
-          : ''
-        const label = `${emoji} ${displayDescription} ${displayCode}`
+        const { description, description_zh_cn, code, emoji } = emojiObj;
+        const displayDescription =
+          language === "zh-cn" ? description_zh_cn || description : description;
+        const displayCode = showEmojiCode ? code : "";
+        const label = `${emoji} ${displayDescription} ${displayCode}`;
         return {
           label,
           code,
-          emoji
-        }
-      })
+          emoji,
+        };
+      });
 
       vscode.window.showQuickPick(items).then(function (selected) {
         if (selected) {

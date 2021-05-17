@@ -1,7 +1,6 @@
 /*---------------------------------------------------------------------------------------------
  *  Copyright (c) Microsoft Corporation. All rights reserved.
  *  Licensed under the MIT License. See License.txt in the project root for license information.
- *  Links: https://github.com/microsoft/vscode/blob/master/extensions/git/src/api/git.d.ts
  *--------------------------------------------------------------------------------------------*/
 
 import { Uri, Event, Disposable, ProviderResult } from "vscode";
@@ -13,6 +12,11 @@ export interface Git {
 
 export interface InputBox {
   value: string;
+}
+
+export const enum ForcePushMode {
+  Force,
+  ForceWithLease,
 }
 
 export const enum RefType {
@@ -131,6 +135,15 @@ export interface CommitOptions {
   signCommit?: boolean;
   empty?: boolean;
   noVerify?: boolean;
+  requireUserConfig?: boolean;
+}
+
+export interface FetchOptions {
+  remote?: string;
+  ref?: string;
+  all?: boolean;
+  prune?: boolean;
+  depth?: number;
 }
 
 export interface BranchQuery {
@@ -195,12 +208,14 @@ export interface Repository {
   removeRemote(name: string): Promise<void>;
   renameRemote(name: string, newName: string): Promise<void>;
 
+  fetch(options?: FetchOptions): Promise<void>;
   fetch(remote?: string, ref?: string, depth?: number): Promise<void>;
   pull(unshallow?: boolean): Promise<void>;
   push(
     remoteName?: string,
     branchName?: string,
-    setUpstream?: boolean
+    setUpstream?: boolean,
+    force?: ForcePushMode
   ): Promise<void>;
 
   blame(path: string): Promise<string>;
@@ -220,6 +235,7 @@ export interface RemoteSourceProvider {
   readonly icon?: string; // codicon name
   readonly supportsQuery?: boolean;
   getRemoteSources(query?: string): ProviderResult<RemoteSource[]>;
+  getBranches?(url: string): ProviderResult<string[]>;
   publishRepository?(repository: Repository): Promise<void>;
 }
 
@@ -243,9 +259,15 @@ export interface PushErrorHandler {
 
 export type APIState = "uninitialized" | "initialized";
 
+export interface PublishEvent {
+  repository: Repository;
+  branch?: string;
+}
+
 export interface API {
   readonly state: APIState;
   readonly onDidChangeState: Event<APIState>;
+  readonly onDidPublish: Event<PublishEvent>;
   readonly git: Git;
   readonly repositories: Repository[];
   readonly onDidOpenRepository: Event<Repository>;
@@ -254,6 +276,7 @@ export interface API {
   toGitUri(uri: Uri, ref: string): Uri;
   getRepository(uri: Uri): Repository | null;
   init(root: Uri): Promise<Repository | null>;
+  openRepository(root: Uri): Promise<Repository | null>;
 
   registerRemoteSourceProvider(provider: RemoteSourceProvider): Disposable;
   registerCredentialsProvider(provider: CredentialsProvider): Disposable;

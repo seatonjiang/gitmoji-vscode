@@ -72,7 +72,7 @@ let Gitmoji: Array<Emoji> = [
     description_zh_cn: "新增或更新测试",
   },
   {
-    emoji: "🔒",
+    emoji: "🔒️",
     code: ":lock:",
     description: "Fix security issues",
     description_zh_cn: "修复安全问题",
@@ -198,7 +198,7 @@ let Gitmoji: Array<Emoji> = [
     description_zh_cn: "新增或更新已编译的文件或包",
   },
   {
-    emoji: "👽",
+    emoji: "👽️",
     code: ":alien:",
     description: "Update code due to external API changes",
     description_zh_cn: "由于外部API变化而更新代码",
@@ -282,7 +282,7 @@ let Gitmoji: Array<Emoji> = [
     description_zh_cn: "提高用户体验 / 可用性",
   },
   {
-    emoji: "🏗",
+    emoji: "🏗️",
     code: ":building_construction:",
     description: "Make architectural changes",
     description_zh_cn: "进行架构更改",
@@ -318,7 +318,7 @@ let Gitmoji: Array<Emoji> = [
     description_zh_cn: "新增或更新快照",
   },
   {
-    emoji: "⚗",
+    emoji: "⚗️",
     code: ":alembic:",
     description: "Perform experiments",
     description_zh_cn: "试验新功能",
