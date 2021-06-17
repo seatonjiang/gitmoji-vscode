@@ -68,8 +68,8 @@ let Gitmoji: Array<Emoji> = [
   {
     emoji: "✅",
     code: ":white_check_mark:",
-    description: "Add or update tests",
-    description_zh_cn: "新增或更新测试",
+    description: "Add, update, or pass tests",
+    description_zh_cn: "添加、更新或通过测试",
   },
   {
     emoji: "🔒️",
@@ -388,6 +388,12 @@ let Gitmoji: Array<Emoji> = [
     code: ":coffin:",
     description: "Remove dead code",
     description_zh_cn: "删除无效代码",
+  },
+  {
+    emoji: "🧪",
+    code: ":test_tube:",
+    description: "Add a failing test",
+    description_zh_cn: "添加一个失败的测试",
   },
 ];
 export default Gitmoji;
