@@ -360,7 +360,7 @@ let Gitmoji: Array<Emoji> = [
     description_zh_cn: "新增或更新动画和过场",
   },
   {
-    emoji: "🗑",
+    emoji: "🗑️",
     code: ":wastebasket:",
     description: "Deprecate code that needs to be cleaned up",
     description_zh_cn: "需要清理的废弃代码",
