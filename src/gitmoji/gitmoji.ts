@@ -252,7 +252,7 @@ let Gitmoji: Array<Emoji> = [
     description_zh_cn: "新增或更新文本和文字",
   },
   {
-    emoji: "🗃",
+    emoji: "🗃️",
     code: ":card_file_box:",
     description: "Perform database related changes",
     description_zh_cn: "执行与数据库相关的更改",
