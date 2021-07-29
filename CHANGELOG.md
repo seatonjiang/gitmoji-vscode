@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.0.7] - 2021-06-17
+
+- Add emoji for TDD
+
 ## [1.0.6] - 2021-05-08
 
 - Render unicode gitmojis as image by default
