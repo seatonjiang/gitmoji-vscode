@@ -397,7 +397,7 @@ let Gitmoji: Array<Emoji> = [
   },
   {
     emoji: "👔",
-    code: ":necktie",
+    code: ":necktie:",
     description: "Add or update business logic and utility functions",
     description_zh_cn: "增加或更新业务逻辑和实用功能",
   }
