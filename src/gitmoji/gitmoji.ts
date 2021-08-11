@@ -395,5 +395,11 @@ let Gitmoji: Array<Emoji> = [
     description: "Add a failing test",
     description_zh_cn: "添加一个失败的测试",
   },
+  {
+    emoji: "👔",
+    code: ":necktie",
+    description: "Add or update business logic and utility functions",
+    description_zh_cn: "增加或更新业务逻辑和实用功能",
+  }
 ];
 export default Gitmoji;
