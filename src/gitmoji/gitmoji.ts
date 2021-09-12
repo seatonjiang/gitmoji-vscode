@@ -8,7 +8,7 @@ let Gitmoji: Array<Emoji> = [
   {
     emoji: "🎨",
     code: ":art:",
-    description: "Improve structure / format of the code",
+    description: "Improve structure/format of the code",
     description_zh_cn: "改进项目结构/代码格式",
   },
   {
@@ -80,13 +80,13 @@ let Gitmoji: Array<Emoji> = [
   {
     emoji: "🔖",
     code: ":bookmark:",
-    description: "Release / Version tags",
+    description: "Release/Version tags",
     description_zh_cn: "Release / Version 标签",
   },
   {
     emoji: "🚨",
     code: ":rotating_light:",
-    description: "Fix compiler / linter warnings",
+    description: "Fix compiler/linter warnings",
     description_zh_cn: "修复编译器 / 链接器警告",
   },
   {
@@ -278,7 +278,7 @@ let Gitmoji: Array<Emoji> = [
   {
     emoji: "🚸",
     code: ":children_crossing:",
-    description: "Improve user experience / usability",
+    description: "Improve user experience/usability",
     description_zh_cn: "提高用户体验 / 可用性",
   },
   {
@@ -380,7 +380,7 @@ let Gitmoji: Array<Emoji> = [
   {
     emoji: "🧐",
     code: ":monocle_face:",
-    description: "Data exploration / inspection",
+    description: "Data exploration/inspection",
     description_zh_cn: "数据探索 / 数据巡检",
   },
   {
@@ -393,13 +393,13 @@ let Gitmoji: Array<Emoji> = [
     emoji: "🧪",
     code: ":test_tube:",
     description: "Add a failing test",
-    description_zh_cn: "添加一个失败的测试",
+    description_zh_cn: "新增一个失败的测试",
   },
   {
     emoji: "👔",
     code: ":necktie:",
-    description: "Add or update business logic and utility functions",
-    description_zh_cn: "增加或更新业务逻辑和实用功能",
+    description: "Add or update business logic",
+    description_zh_cn: "新增或更新业务逻辑",
   }
 ];
 export default Gitmoji;
