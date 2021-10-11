@@ -57,7 +57,7 @@ let Gitmoji: Array<Emoji> = [
     emoji: "💄",
     code: ":lipstick:",
     description: "Add or update the UI and style files",
-    description_zh_cn: "新增或更新 UI 样式文件",
+    description_zh_cn: "添加或更新 UI 样式文件",
   },
   {
     emoji: "🎉",
@@ -123,13 +123,13 @@ let Gitmoji: Array<Emoji> = [
     emoji: "👷",
     code: ":construction_worker:",
     description: "Add or update CI build system",
-    description_zh_cn: "新增或更新 CI 构建系统",
+    description_zh_cn: "添加或更新 CI 构建系统",
   },
   {
     emoji: "📈",
     code: ":chart_with_upwards_trend:",
     description: "Add or update analytics or track code",
-    description_zh_cn: "新增或更新分析或跟踪代码",
+    description_zh_cn: "添加或更新分析或跟踪代码",
   },
   {
     emoji: "♻️",
@@ -153,13 +153,13 @@ let Gitmoji: Array<Emoji> = [
     emoji: "🔧",
     code: ":wrench:",
     description: "Add or update configuration files",
-    description_zh_cn: "新增或更新配置文件",
+    description_zh_cn: "添加或更新配置文件",
   },
   {
     emoji: "🔨",
     code: ":hammer:",
     description: "Add or update development scripts",
-    description_zh_cn: "新增或更新开发脚本",
+    description_zh_cn: "添加或更新开发脚本",
   },
   {
     emoji: "🌐",
@@ -195,7 +195,7 @@ let Gitmoji: Array<Emoji> = [
     emoji: "📦",
     code: ":package:",
     description: "Add or update compiled files or packages",
-    description_zh_cn: "新增或更新已编译的文件或包",
+    description_zh_cn: "添加或更新已编译的文件或包",
   },
   {
     emoji: "👽️",
@@ -213,7 +213,7 @@ let Gitmoji: Array<Emoji> = [
     emoji: "📄",
     code: ":page_facing_up:",
     description: "Add or update license",
-    description_zh_cn: "新增或更新 License",
+    description_zh_cn: "添加或更新 License",
   },
   {
     emoji: "💥",
@@ -225,7 +225,7 @@ let Gitmoji: Array<Emoji> = [
     emoji: "🍱",
     code: ":bento:",
     description: "Add or update assets",
-    description_zh_cn: "新增或更新资源",
+    description_zh_cn: "添加或更新资源",
   },
   {
     emoji: "♿️",
@@ -249,7 +249,7 @@ let Gitmoji: Array<Emoji> = [
     emoji: "💬",
     code: ":speech_balloon:",
     description: "Add or update text and literals",
-    description_zh_cn: "新增或更新文本和文字",
+    description_zh_cn: "添加或更新文本和文字",
   },
   {
     emoji: "🗃️",
@@ -261,7 +261,7 @@ let Gitmoji: Array<Emoji> = [
     emoji: "🔊",
     code: ":loud_sound:",
     description: "Add or update logs",
-    description_zh_cn: "新增或更新日志",
+    description_zh_cn: "添加或更新日志",
   },
   {
     emoji: "🔇",
@@ -273,7 +273,7 @@ let Gitmoji: Array<Emoji> = [
     emoji: "👥",
     code: ":busts_in_silhouette:",
     description: "Add or update contributor(s)",
-    description_zh_cn: "新增或更新贡献者",
+    description_zh_cn: "添加或更新贡献者",
   },
   {
     emoji: "🚸",
@@ -303,19 +303,19 @@ let Gitmoji: Array<Emoji> = [
     emoji: "🥚",
     code: ":egg:",
     description: "Add or update an easter egg",
-    description_zh_cn: "新增或更新一个彩蛋",
+    description_zh_cn: "添加或更新一个彩蛋",
   },
   {
     emoji: "🙈",
     code: ":see_no_evil:",
     description: "Add or update a .gitignore file",
-    description_zh_cn: "新增或更新 .gitignore 文件",
+    description_zh_cn: "添加或更新 .gitignore 文件",
   },
   {
     emoji: "📸",
     code: ":camera_flash:",
     description: "Add or update snapshots",
-    description_zh_cn: "新增或更新快照",
+    description_zh_cn: "添加或更新快照",
   },
   {
     emoji: "⚗️",
@@ -333,13 +333,13 @@ let Gitmoji: Array<Emoji> = [
     emoji: "🏷️",
     code: ":label:",
     description: "Add or update types",
-    description_zh_cn: "新增或更新类型",
+    description_zh_cn: "添加或更新类型",
   },
   {
     emoji: "🌱",
     code: ":seedling:",
     description: "Add or update seed files",
-    description_zh_cn: "新增或更新 SEED 文件",
+    description_zh_cn: "添加或更新 SEED 文件",
   },
   {
     emoji: "🚩",
@@ -357,7 +357,7 @@ let Gitmoji: Array<Emoji> = [
     emoji: "💫",
     code: ":dizzy:",
     description: "Add or update animations and transitions",
-    description_zh_cn: "新增或更新动画和过场",
+    description_zh_cn: "添加或更新动画和过场",
   },
   {
     emoji: "🗑️",
@@ -393,13 +393,13 @@ let Gitmoji: Array<Emoji> = [
     emoji: "🧪",
     code: ":test_tube:",
     description: "Add a failing test",
-    description_zh_cn: "新增一个失败的测试",
+    description_zh_cn: "添加一个失败的测试",
   },
   {
     emoji: "👔",
     code: ":necktie:",
     description: "Add or update business logic",
-    description_zh_cn: "新增或更新业务逻辑",
+    description_zh_cn: "添加或更新业务逻辑",
   }
 ];
 export default Gitmoji;

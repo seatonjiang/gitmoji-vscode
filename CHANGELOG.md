@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.0.9] - 2021-10-11
+
+-   Update Chinese translation content
+
 ## [1.0.8] - 2021-09-18
 
 -   Add necktie emoji for business logic
