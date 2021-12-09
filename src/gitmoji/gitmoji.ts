@@ -400,6 +400,18 @@ let Gitmoji: Array<Emoji> = [
     code: ":necktie:",
     description: "Add or update business logic",
     description_zh_cn: "添加或更新业务逻辑",
+  },
+  {
+    emoji: "🪄",
+    code: ":magicwand:",
+    description: "Dependency setup",
+    description_zh_cn: "依赖设置",
+  },
+  {
+    emoji: "⚖️",
+    code: ":scales:",
+    description: "Resolve merge conflicts",
+    description_zh_cn: "解决合并冲突",
   }
 ];
 export default Gitmoji;
