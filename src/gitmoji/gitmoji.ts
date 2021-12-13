@@ -1,3 +1,4 @@
+// https://github.com/carloscuesta/gitmoji/commits/master/src/data/gitmojis.json
 interface Emoji {
   readonly emoji: any;
   readonly code: any;
@@ -400,6 +401,24 @@ let Gitmoji: Array<Emoji> = [
     code: ":necktie:",
     description: "Add or update business logic",
     description_zh_cn: "添加或更新业务逻辑",
-  }
+  },
+  {
+    emoji: "🩺",
+    code: ":stethoscope:",
+    description: "Add or update healthcheck",
+    description_zh_cn: "添加或更新健康检查",
+  },
+  {
+    emoji: "🧱",
+    code: ":bricks:",
+    description: "Infrastructure related changes",
+    description_zh_cn: "与基础设施有关的变化",
+  },
+  {
+    emoji: "🧑‍💻",
+    code: ":technologist:",
+    description: "Improve developer experience",
+    description_zh_cn: "改善开发者体验",
+  },
 ];
 export default Gitmoji;
