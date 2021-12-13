@@ -1,22 +1,22 @@
 {
   "name": "gitmoji-vscode",
   "displayName": "Gitmoji",
-  "description": "An emoji tool for your git commit messages",
-  "version": "1.0.9",
+  "description": "Gitmoji tool for git commit messages in VS Code",
+  "version": "1.1.0",
   "author": {
     "name": "Seaton Jiang",
-    "email": "seatonjiang@vtrois.com"
+    "email": "hi@seatonjiang.com"
   },
-  "publisher": "Vtrois",
+  "publisher": "seatonjiang",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/vtrois/gitmoji-vscode/issues"
+    "url": "https://github.com/seatonjiang/gitmoji-vscode/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vtrois/gitmoji-vscode.git"
+    "url": "git+https://github.com/seatonjiang/gitmoji-vscode.git"
   },
-  "homepage": "https://github.com/vtrois/gitmoji-vscode/blob/main/README.md",
+  "homepage": "https://github.com/seatonjiang/gitmoji-vscode/blob/main/README.md",
   "engines": {
     "vscode": "^1.40.0"
   },
@@ -38,7 +38,7 @@
     "commands": [
       {
         "command": "extension.Gitmoji",
-        "title": "Gitmoji: An emoji tool for your git commit messages",
+        "title": "Gitmoji: Gitmoji tool for git commit messages in VS Code",
         "icon": {
           "dark": "images/icon_dark.svg",
           "light": "images/icon_light.svg"
