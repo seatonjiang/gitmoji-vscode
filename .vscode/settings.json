@@ -5,6 +5,5 @@
   "search.exclude": {
     "out": true
   },
-  "typescript.tsc.autoDetect": "off",
-  "standard.enable": false
+  "typescript.tsc.autoDetect": "off"
 }
