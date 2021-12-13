@@ -1,19 +1,44 @@
-![About](https://cdn.jsdelivr.net/gh/vtrois/gitmoji-vscode@1/images/about.gif)
-
 English | [简体中文](README.zh-CN.md)
 
-## About
+<p align="center">
+    <img src="https://cdn.jsdelivr.net/gh/seatonjiang/gitmoji-vscode@1/images/gitmoji.gif" width="456">
+</p>
 
-This project provides an easy solution for using [Gitmoji](https://github.com/carloscuesta/gitmoji) from VSCode Extension. gitmoji-vscode solves the hassle of searching through the gitmoji list. Includes a bunch of options you can play with! 🎉
+<p align="center">
+    <img src="https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=flat-square">
+    <a href="https://github.com/seatonjiang/gitmoji-vscode/issues">
+        <img src="https://img.shields.io/github/issues/seatonjiang/gitmoji-vscode?style=flat-square&color=blue">
+    </a>
+    <a href="https://github.com/seatonjiang/gitmoji-vscode/pulls">
+        <img src="https://img.shields.io/github/issues-pr/seatonjiang/gitmoji-vscode?style=flat-square&color=brightgreen">
+    </a>
+    <a href="https://github.com/seatonjiang/gitmoji-vscode/blob/main/LICENSE">
+        <img src="https://img.shields.io/github/license/seatonjiang/gitmoji-vscode?&style=flat-square">
+    </a>
+</p>
 
-## Install
+<p align="center">
+    <a href="https://github.com/seatonjiang/gitmoji-vscode/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/seatonjiang/gitmoji-vscode/issues">Request Feature</a>
+</p>
 
-1. Open [Visual Studio Code](https://code.visualstudio.com/)
-2. Press `Ctrl+Shift+X` to open the Extensions tab
-3. Type `Gitmoji` to find the extension
-4. Click the `Install` button, then the `Enable` button
+<p align="center">Gitmoji tool for git commit messages in VS Code</p>
 
-## Configuration
+## 💻 Screenshot
+
+<p align="center">
+    <img src="https://cdn.jsdelivr.net/gh/seatonjiang/gitmoji-vscode@1/images/about.gif">
+</p>
+
+## 📦 Install
+
+1. Open [Visual Studio Code](https://code.visualstudio.com/).
+2. Press `Ctrl+Shift+X` to open the Extensions tab.
+3. Type `Gitmoji` to find the extension.
+4. Click the `Install` button, then the `Enable` button.
+
+## 🔨 Configuration
 
 ### Select output type
 
@@ -21,11 +46,11 @@ This project provides an easy solution for using [Gitmoji](https://github.com/ca
 
 For emoji type:
 
-![emoji](https://cdn.jsdelivr.net/gh/vtrois/gitmoji-vscode@1/images/emoji.png)
+![emoji](https://cdn.jsdelivr.net/gh/seatonjiang/gitmoji-vscode@1/images/emoji.png)
 
 For code type:
 
-![code](https://cdn.jsdelivr.net/gh/vtrois/gitmoji-vscode@1/images/code.png)
+![code](https://cdn.jsdelivr.net/gh/seatonjiang/gitmoji-vscode@1/images/code.png)
 
 Sample configuration:
 
@@ -35,7 +60,7 @@ Sample configuration:
 }
 ```
 
-**Notice**: If you use Gitlab or Coding, type emoji, if you use Github, you can type code or emoji.
+**Notice**: If you use Gitlab, type emoji, if you use Github, you can type code or emoji.
 
 ### Add configurable additionnal emojis
 
@@ -88,6 +113,6 @@ Sample configuration:
 }
 ```
 
-## License
+## 🤝 Contributing
 
-The code is available under the [MIT](https://github.com/vtrois/gitmoji-vscode/blob/main/LICENSE) license.
+We welcome all contributions. You can submit any ideas as pull requests or as GitHub issues, have a good time! :)

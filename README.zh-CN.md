@@ -1,21 +1,46 @@
-![About](https://cdn.jsdelivr.net/gh/vtrois/gitmoji-vscode@1/images/about.gif)
-
 [English](README.md) | 简体中文
 
-## 关于扩展
+<p align="center">
+    <img src="https://cdn.jsdelivr.net/gh/seatonjiang/gitmoji-vscode@1/images/gitmoji.gif" width="456">
+</p>
 
-此扩展是为了在 VSCode 中更方便的使用 [Gitmoji](https://github.com/carloscuesta/gitmoji)，解决了搜索 Gitmoji 列表的烦恼，并且扩展包含了很多自定义配置！
+<p align="center">
+    <img src="https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=flat-square">
+    <a href="https://github.com/seatonjiang/gitmoji-vscode/issues">
+        <img src="https://img.shields.io/github/issues/seatonjiang/gitmoji-vscode?style=flat-square&color=blue">
+    </a>
+    <a href="https://github.com/seatonjiang/gitmoji-vscode/pulls">
+        <img src="https://img.shields.io/github/issues-pr/seatonjiang/gitmoji-vscode?style=flat-square&color=brightgreen">
+    </a>
+    <a href="https://github.com/seatonjiang/gitmoji-vscode/blob/main/LICENSE">
+        <img src="https://img.shields.io/github/license/seatonjiang/gitmoji-vscode?&style=flat-square">
+    </a>
+</p>
 
-## 安装扩展
+<p align="center">
+    <a href="https://github.com/seatonjiang/gitmoji-vscode/issues">报告问题</a>
+    ·
+    <a href="https://github.com/seatonjiang/gitmoji-vscode/issues">功能需求</a>
+</p>
+
+<p align="center">VS Code 中用于提交说明的 Gitmoji 拓展</p>
+
+## 💻 扩展截图
+
+<p align="center">
+    <img src="https://cdn.jsdelivr.net/gh/seatonjiang/gitmoji-vscode@1/images/about.gif">
+</p>
+
+## 📦 安装扩展
 
 1. 首先打开 [Visual Studio Code](https://code.visualstudio.com/)；
 2. 使用 `Ctrl+Shift+X` 组合键打开「扩展」标签；
 3. 输入 `Gitmoji` 寻找此扩展；
 4. 点击 `安装` 按钮，然后点击 `启用` 按钮即可。
 
-**提示**：也可以直接在 Marketplace 中找到 [Gitmoji](https://marketplace.visualstudio.com/items?itemName=Vtrois.gitmoji-vscode)，然后点击 `Install` 即可。
+**提示**：也可以直接在 Marketplace 中找到 [Gitmoji](https://marketplace.visualstudio.com/items?itemName=seatonjiang.gitmoji-vscode)，然后点击 `Install` 即可。
 
-## 配置扩展
+## 🔨 配置扩展
 
 ### 表情符号输出类型
 
@@ -23,11 +48,11 @@
 
 emoji 模式的例子：
 
-![emoji](https://cdn.jsdelivr.net/gh/vtrois/gitmoji-vscode@1/images/emoji.png)
+![emoji](https://cdn.jsdelivr.net/gh/seatonjiang/gitmoji-vscode@1/images/emoji.png)
 
 code 模式的例子：
 
-![code](https://cdn.jsdelivr.net/gh/vtrois/gitmoji-vscode@1/images/code.png)
+![code](https://cdn.jsdelivr.net/gh/seatonjiang/gitmoji-vscode@1/images/code.png)
 
 示例配置：
 
@@ -90,6 +115,6 @@ code 模式的例子：
 }
 ```
 
-## 版权说明
+## 🤝 参与共建
 
-该仓库代码文件使用 [MIT](https://github.com/vtrois/gitmoji-vscode/blob/main/LICENSE) 协议进行授权，文档文件使用 [署名-非商业性使用-禁止演绎 4.0 国际](http://creativecommons.org/licenses/by-nc-nd/4.0/) 协议进行授权。
+我们欢迎所有的贡献，你可以将任何想法作为 pull requests 或 GitHub issues 提交，顺颂商祺 :)
