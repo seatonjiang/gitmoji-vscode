@@ -115,4 +115,8 @@ Sample configuration:
 
 ## 🤝 Contributing
 
-We welcome all contributions. You can submit any ideas as pull requests or as GitHub issues, have a good time! :)
+We welcome all contributions. You can submit any ideas as pull requests or as issues, have a good time! :)
+
+## 📃 License
+
+The project is released under the MIT License, see the [LICENCE](https://github.com/seatonjiang/gitmoji-vscode/blob/main/LICENSE) file for details.
