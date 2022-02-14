@@ -1,7 +1,7 @@
 [English](README.md) | 简体中文
 
 <p align="center">
-    <img src="https://cdn.jsdelivr.net/gh/seatonjiang/gitmoji-vscode@main/images/gitmoji.gif" width="456">
+    <img src="images/gitmoji.gif" width="400">
 </p>
 
 <p align="center">
@@ -28,7 +28,7 @@
 ## 💻 扩展截图
 
 <p align="center">
-    <img src="https://cdn.jsdelivr.net/gh/seatonjiang/gitmoji-vscode@main/images/about.gif">
+    <img src="images/about.gif">
 </p>
 
 ## 📦 安装扩展
@@ -48,11 +48,11 @@
 
 emoji 模式的例子：
 
-![emoji](https://cdn.jsdelivr.net/gh/seatonjiang/gitmoji-vscode@main/images/emoji.png)
+![emoji](images/emoji.png)
 
 code 模式的例子：
 
-![code](https://cdn.jsdelivr.net/gh/seatonjiang/gitmoji-vscode@main/images/code.png)
+![code](images/code.png)
 
 示例配置：
 

@@ -1,7 +1,7 @@
 English | [简体中文](README.zh-CN.md)
 
 <p align="center">
-    <img src="https://cdn.jsdelivr.net/gh/seatonjiang/gitmoji-vscode@main/images/gitmoji.gif" width="456">
+    <img src="images/gitmoji.gif" width="400">
 </p>
 
 <p align="center">
@@ -28,7 +28,7 @@ English | [简体中文](README.zh-CN.md)
 ## 💻 Screenshot
 
 <p align="center">
-    <img src="https://cdn.jsdelivr.net/gh/seatonjiang/gitmoji-vscode@main/images/about.gif">
+    <img src="images/about.gif">
 </p>
 
 ## 📦 Install
@@ -46,11 +46,11 @@ English | [简体中文](README.zh-CN.md)
 
 For emoji type:
 
-![emoji](https://cdn.jsdelivr.net/gh/seatonjiang/gitmoji-vscode@main/images/emoji.png)
+![emoji](images/emoji.png)
 
 For code type:
 
-![code](https://cdn.jsdelivr.net/gh/seatonjiang/gitmoji-vscode@main/images/code.png)
+![code](images/code.png)
 
 Sample configuration:
 
