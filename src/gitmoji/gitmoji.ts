@@ -79,6 +79,12 @@ let Gitmoji: Array<Emoji> = [
         description_zh_cn: "修复安全问题",
     },
     {
+        emoji: "🔐",
+        code: ":closed_lock_with_key:",
+        description: "Add or update secrets",
+        description_zh_cn: "添加或更新 secrets",
+    },
+    {
         emoji: "🔖",
         code: ":bookmark:",
         description: "Release/Version tags",

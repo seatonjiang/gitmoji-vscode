@@ -2,7 +2,7 @@
   "name": "gitmoji-vscode",
   "displayName": "Gitmoji",
   "description": "Gitmoji tool for git commit messages in VS Code",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "author": {
     "name": "Seaton Jiang",
     "email": "hi@seatonjiang.com"

@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.1.1] - 2022-02-17
+
+- Sync with official.
+
 ## [1.1.0] - 2021-12-14
 
 - Sync with official.
