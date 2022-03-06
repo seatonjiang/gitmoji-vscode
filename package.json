@@ -39,10 +39,7 @@
       {
         "command": "extension.Gitmoji",
         "title": "Gitmoji: Gitmoji tool for git commit messages in VS Code",
-        "icon": {
-          "dark": "images/icon_dark.svg",
-          "light": "images/icon_light.svg"
-        }
+        "icon": "$(smiley)"
       }
     ],
     "menus": {
