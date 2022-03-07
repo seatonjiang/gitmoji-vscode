@@ -1,78 +1,126 @@
 # Changelog
 
-## [1.1.1] - 2022-02-17
+All notable changes to this project will be documented in this file. See [Gitmoji](https://gitmoji.dev/) for your commit messages.
+
+## v1.1.2 (2022-03-07)
+
+### Features
+
+- Use smiley codicon instead of custom svg icon.
+
+## v1.1.1 (2022-02-17)
+
+### Features
 
 - Sync with official.
 
-## [1.1.0] - 2021-12-14
+## v1.1.0 (2021-12-14)
+
+### Features
 
 - Sync with official.
 - Change of owners.
 
-## [1.0.9] - 2021-10-11
+## v1.0.9 (2021-10-11)
+
+### Features
 
 - Update Chinese translation content.
 
-## [1.0.8] - 2021-09-18
+## v1.0.8 (2021-09-18)
+
+### Features
 
 - Add necktie emoji for business logic.
 - Swap emoji entry for an actual emoji.
 
-## [1.0.7] - 2021-06-17
+## v1.0.7 (2021-06-17)
+
+### Features
 
 - Add emoji for TDD.
 
-## [1.0.6] - 2021-05-08
+## v1.0.6 (2021-05-08)
+
+### Features
 
 - Render unicode gitmojis as image by default.
 
-## [1.0.5] - 2021-03-13
+## v1.0.5 (2021-03-13)
+
+### Features
 
 - Sync with official.
 
-## [1.0.4] - 2020-12-13
+## v1.0.4 (2020-12-13)
+
+### Features
 
 - Sync with official.
 
-## [1.0.3] - 2020-11-27
+## v1.0.3 (2020-11-27)
+
+### Bug Fixes
 
 - Fix emoji code not showing up in source control.
 
-## [1.0.2] - 2020-11-25
+## v1.0.2 (2020-11-25)
+
+### Features
 
 - Sync with official.
 - Add the ability to search for gitmoji by emoji code.
 
-## [1.0.1] - 2020-11-08
+## v1.0.1 (2020-11-08)
+
+### Features
 
 - Sync with official.
 
-## [1.0.0] - 2020-10-06
+## v1.0.0 (2020-10-06)
+
+### Features
 
 - Official version release.
 - Sync with official.
 
-## [0.2.4] - 2020-10-04
+## v0.2.4 (2020-10-04)
+
+### Features
 
 - Sync with official.
 - Replace default github branch.
 - Update VSCode api.
 
-## [0.2.3] - 2020-09-23
+## v0.2.3 (2020-09-23)
+
+### Features
 
 - Sync with official.
 
-## [0.2.2] - 2020-08-30
+## v0.2.2 (2020-08-30)
+
+### Features
 
 - Sync with official.
+
+### Bug Fixes
+
 - Fix lower case "Remove".
 
-## [0.2.1] - 2020-07-22
+## v0.2.1 (2020-07-22)
 
-- Fix icons to match new style.
+### Features
+
 - Change all the verbs to infinitive.
 
-## [0.2.0] - 2020-07-03
+### Bug Fixes
+
+- Fix icons to match new style.
+
+## v0.2.0 (2020-07-03)
+
+### Features
 
 - Add build scripts emojis.
 - Clarify bulb description.
@@ -81,44 +129,62 @@
 - Modify the installation method.
 - Change code indentation.
 
-## [0.1.9] - 2020-05-23
+## v0.1.9 (2020-05-23)
+
+### Features
 
 - Add option to only use the configurable additionnal emojis.
 
-## [0.1.8] - 2020-01-30
+## v0.1.8 (2020-01-30)
+
+### Features
 
 - Add configurable additionnal emojis.
 - Add new emoji for deprecating code that needs to be cleaned up.
 
-## [0.1.7] - 2020-01-13
+## v0.1.7 (2020-01-13)
+
+### Features
 
 - Add space after emoji prefix.
 
-## [0.1.6] - 2019-12-27
+## v0.1.6 (2019-12-27)
+
+### Features
 
 - Optimization command description.
 
-## [0.1.5] - 2019-12-15
+## v0.1.5 (2019-12-15)
+
+### Features
 
 - Add new emoji for catching errors.
 
-## [0.1.4] - 2019-11-21
+## v0.1.4 (2019-11-21)
+
+### Features
 
 - Configure the type of Gitmoji output.
 
-## [0.1.3] - 2019-11-19
+## v0.1.3 (2019-11-19)
+
+### Features
 
 - Fix extension description.
 
-## [0.1.2] - 2019-11-17
+## v0.1.2 (2019-11-17)
+
+### Features
 
 - Repair install instructions.
 
-## [0.1.1] - 2019-11-17
+## v0.1.1 (2019-11-17)
 
-- Synchronize 65 emoji rules with [gitmoji](https://github.com/carloscuesta/gitmoji).
+### Features
+
+- Sync with official.
 - Chinese description according to the vscode env.
 
-## [0.1.0] - 2019-11-16
+## v0.1.0 (2019-11-16)
 
 - Initial release.
