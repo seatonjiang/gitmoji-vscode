@@ -5,7 +5,9 @@ English | [简体中文](README.zh-CN.md)
 </p>
 
 <p align="center">
-    <img src="https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=flat-square">
+    <a href="https://github.com/carloscuesta/gitmoji">
+        <img src="https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=flat-square">
+    </a>
     <a href="https://github.com/seatonjiang/gitmoji-vscode/issues">
         <img src="https://img.shields.io/github/issues/seatonjiang/gitmoji-vscode?style=flat-square&color=blue">
     </a>
@@ -23,7 +25,10 @@ English | [简体中文](README.zh-CN.md)
     <a href="https://github.com/seatonjiang/gitmoji-vscode/issues">Request Feature</a>
 </p>
 
-<p align="center">Gitmoji tool for git commit messages in VS Code</p>
+<p align="center">
+    <a href="https://github.com/carloscuesta/gitmoji">Gitmoji</a>
+    tool for git commit messages in VS Code
+</p>
 
 ## 💻 Screenshot
 

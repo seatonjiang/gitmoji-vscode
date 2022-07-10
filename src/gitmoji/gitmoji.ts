@@ -426,5 +426,11 @@ let Gitmoji: Array<Emoji> = [
         description: "Improve developer experience",
         description_zh_cn: "改善开发者体验",
     },
+    {
+        emoji: "💸",
+        code: ":money_with_wings:",
+        description: "Add sponsorships or money related infrastructure",
+        description_zh_cn: "添加赞助或与金钱相关的基础设施",
+    },
 ];
 export default Gitmoji;
