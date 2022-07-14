@@ -1,4 +1,4 @@
-English | [简体中文](README.zh-CN.md) | [Português Brasileiro](README.pt-BR.md) | [Português Europeu](README.pt-PT.md)
+[English](README.md) | [简体中文](README.zh-CN.md) | Português Brasileiro | [Português Europeu](README.pt-PT.md)
 
 <p align="center">
     <img src="https://raw.githubusercontent.com/seatonjiang/gitmoji-vscode/main/images/gitmoji.gif" width="400">
@@ -20,44 +20,44 @@ English | [简体中文](README.zh-CN.md) | [Português Brasileiro](README.pt-BR
 </p>
 
 <p align="center">
-    <a href="https://github.com/seatonjiang/gitmoji-vscode/issues">Report Bug</a>
+    <a href="https://github.com/seatonjiang/gitmoji-vscode/issues">Sinalize o <i>bug</i></a>
     ·
-    <a href="https://github.com/seatonjiang/gitmoji-vscode/issues">Request Feature</a>
+    <a href="https://github.com/seatonjiang/gitmoji-vscode/issues">Solicite a nova função</a>
 </p>
 
 <p align="center">
     <a href="https://github.com/carloscuesta/gitmoji">Gitmoji</a>
-    tool for git commit messages in VS Code
+    ferramenta para a mensagem de <i>commit</i> de <i>git</i> no VSCode
 </p>
 
-## 💻 Screenshot
+## 💻 Captura de tela
 
 <p align="center">
     <img src="https://raw.githubusercontent.com/seatonjiang/gitmoji-vscode/main/images/about.gif">
 </p>
 
-## 📦 Install
+## 📦 Instalação
 
-1. Open [Visual Studio Code](https://code.visualstudio.com/).
-2. Press `Ctrl+Shift+X` to open the Extensions tab.
-3. Type `Gitmoji` to find the extension.
-4. Click the `Install` button, then the `Enable` button.
+1. Abra [Visual Studio Code](https://code.visualstudio.com/).
+2. Pressione `Ctrl` + `Shift`+ `X` para o guia de extensões.
+3. Digite `Gitmoji` para achar a extensão.
+4. Clique no botão `Instalar`, então o botão `Ativar`.
 
-## 🔨 Configuration
+## 🔨 Configuração
 
-### Select output type
+### Selecione o tipo de saída
 
-- `outputType` - Configure the type of emoji output as needed. Default is `emoji`
+- `outputType` - Configurar o tipo de saída de *emoji,* conforme necessário. O padrão é `emoji`. 
 
-For emoji type:
+Para o tipo de *emoji:*
 
 ![emoji](https://raw.githubusercontent.com/seatonjiang/gitmoji-vscode/main/images/emoji.png)
 
-For code type:
+Para o tipo de código:
 
 ![code](https://raw.githubusercontent.com/seatonjiang/gitmoji-vscode/main/images/code.png)
 
-Sample configuration:
+Amostra de configuração:
 
 ```json
 {
@@ -65,13 +65,13 @@ Sample configuration:
 }
 ```
 
-**Notice**: If you use Gitlab, type emoji, if you use Github, you can type code or emoji.
+**Observação**: Se vocë usar Gitlab, digite `emoji`, se você usar, você pode escrever `code` ou `emoji`.
 
-### Add configurable additionnal emojis
+### Configurar a adição de *emojis* adicionais
 
-- `additionalEmojis` - Add configurable additionnal emojis.
+- `additionalEmojis` - Configurar a adição de novos *emojis.*
 
-Sample configuration:
+Amostra de configuração:
 
 ```json
 {
@@ -96,13 +96,13 @@ Sample configuration:
 }
 ```
 
-**Notice**: `description_zh_cn` is a chinese (zh_CN) version of the description. If empty, the english description will be used.
+**Observação**: `description_zh_cn` é uma versão chinesa da descrição e `description_pt_br` uma versão portuguesa brasileira da descrição. Se algo vazio, a versão inglesa será usada.
 
-### Only use your additionnal emojis
+### Usar apenas os *emojis* adicionais
 
-- `onlyUseAdditionalEmojis` - Use your additional emojis instead the ones from the extension.
+- `onlyUseAdditionalEmojis` - Usar seus *emojis* adicionais ao invés desses da extensão.
 
-Sample configuration:
+Amostra de configuração:
 
 ```json
 {
@@ -110,11 +110,11 @@ Sample configuration:
 }
 ```
 
-### Search gitmoji by emoji code
+### Procurar `gitmoji` pelo código de *emoji*
 
-- `showEmojiCode` - Enable searching gitmojis by emoji code (example: ambulance will return hotfix).
+- `showEmojiCode` - Ativar a pesquisa de *gitmojis* pelo código de *emoji*. (Por exemplo: `ambulance` retornará `hotfix`).
 
-Sample configuration:
+Amostra de configuração:
 
 ```json
 {
@@ -122,10 +122,10 @@ Sample configuration:
 }
 ```
 
-## 🤝 Contributing
+## 🤝 Contribuição
 
-We welcome all contributions. You can submit any ideas as pull requests or as issues, have a good time! :)
+Nós damos as boas-vindas a quaisquer contribuições. Você pode enviar quaisquer ideias, assim como *pull requests* ou *issues*. Tenha um ótimo tempo! :-)
 
-## 📃 License
+## 📃 Licença
 
-The project is released under the MIT License, see the [LICENCE](https://github.com/seatonjiang/gitmoji-vscode/blob/main/LICENSE) file for details.
+O projeto está sob a licença de MIT, veja o arquivo da [LICENÇA](https://github.com/seatonjiang/gitmoji-vscode/blob/main/LICENSE) para ver mais detalhes.

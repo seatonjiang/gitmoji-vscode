@@ -1,4 +1,4 @@
-[English](README.md) | 简体中文
+[English](README.md) | 简体中文 | [Português Brasileiro](README.pt-BR.md) | [Português Europeu](README.pt-PT.md)
 
 <p align="center">
     <img src="images/gitmoji.gif" width="400">
@@ -23,7 +23,7 @@
     <a href="https://github.com/seatonjiang/gitmoji-vscode/issues">功能需求</a>
 </p>
 
-<p align="center">VS Code 中用于提交说明的 Gitmoji 拓展</p>
+<p align="center">VS Code 中用于提交说明的 <a href="https://github.com/carloscuesta/gitmoji">Gitmoji</a> 拓展</p>
 
 ## 💻 扩展截图
 
@@ -77,13 +77,17 @@ code 模式的例子：
       "emoji": "🐛",
       "code": ":bug:",
       "description": "Fix a bug.",
-      "description_zh_cn": "修复 BUG"
+      "description_pt_br": "Corrigir o bug",
+      "description_pt_pt": "Corrigir a falha",
+      "description_zh_cn": "修复 BUG",
     },
     {
       "emoji": "🚑",
       "code": ":ambulance:",
       "description": "Critical hotfix.",
-      "description_zh_cn": "紧急热修复"
+      "description_pt_br": "Correção crítica",
+      "description_pt_pt": "Correcção crítica",
+      "description_zh_cn": "紧急热修复",
     }
   ]
 }
