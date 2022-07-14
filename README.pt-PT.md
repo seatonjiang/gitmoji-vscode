@@ -1,4 +1,4 @@
-English | [简体中文](README.zh-CN.md) | [Português Brasileiro](README.pt-BR.md)
+[English](README.md) | [简体中文](README.zh-CN.md) | [Português Brasileiro](README.pt-BR.md) | Português Europeu
 
 <p align="center">
     <img src="https://raw.githubusercontent.com/seatonjiang/gitmoji-vscode/main/images/gitmoji.gif" width="400">
