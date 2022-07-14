@@ -1,4 +1,4 @@
-English | [简体中文](README.zh-CN.md) | [Português Brasileiro](README.pt-BR.md) | [Português Europeu](README.pt-PT.md)
+[English](README.md) | [简体中文](README.zh-CN.md) | Português Brasileiro | [Português Europeu](README.pt-PT.md)
 
 <p align="center">
     <img src="https://raw.githubusercontent.com/seatonjiang/gitmoji-vscode/main/images/gitmoji.gif" width="400">
@@ -81,6 +81,7 @@ Amostra de configuração:
       "code": ":bug:",
       "description": "Fix a bug.",
       "description_pt_br": "Corrigir o bug",
+      "description_pt_pt": "Corrigir a falha",
       "description_zh_cn": "修复 BUG",
     },
     {
@@ -88,6 +89,7 @@ Amostra de configuração:
       "code": ":ambulance:",
       "description": "Critical hotfix.",
       "description_pt_br": "Correção crítica",
+      "description_pt_pt": "Correcção crítica",
       "description_zh_cn": "紧急热修复",
     }
   ]
