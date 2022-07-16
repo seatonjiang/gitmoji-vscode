@@ -39,7 +39,7 @@
 ## 📦 Instalação
 
 1. Abra [Visual Studio Code](https://code.visualstudio.com/).
-2. Pressione `Ctrl` + `Shift`+ `X` para o guia de extensões.
+2. Pressione `Ctrl` + `Shift`+ `X` para abrir o guia de extensões.
 3. Digite `Gitmoji` para achar a extensão.
 4. Clique no botão `Instalar`, então o botão `Ativar`.
 
@@ -65,7 +65,7 @@ Amostra de configuração:
 }
 ```
 
-**Observação**: Se vocë usar Gitlab, digite `emoji`, se você usar, você pode escrever `code` ou `emoji`.
+**Observação**: Se você usar Gitlab, digite `emoji`, se você usar GitHub, você pode escrever `code` ou `emoji`.
 
 ### Configurar a adição de *emojis* adicionais
 
@@ -96,7 +96,7 @@ Amostra de configuração:
 }
 ```
 
-**Observação**: `description_zh_cn` é uma versão chinesa da descrição e `description_pt_br` uma versão portuguesa brasileira da descrição. Se algo vazio, a versão inglesa será usada.
+**Observação**: `description_zh_cn` é uma versão chinesa da descrição e `description_pt_br` uma versão portuguesa brasileira da descrição. Se algo estiver vazio, a versão inglesa será usada.
 
 ### Usar apenas os *emojis* adicionais
 
