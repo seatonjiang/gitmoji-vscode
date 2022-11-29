@@ -23,7 +23,7 @@
     <a href="https://github.com/seatonjiang/gitmoji-vscode/issues">功能需求</a>
 </p>
 
-<p align="center">VSCode 中用于提交说明的 <a href="https://github.com/carloscuesta/gitmoji">Gitmoji</a> 拓展 😜</p>
+<p align="center">VSCode 中用于 Git 提交信息的 Gitmoji 工具</p>
 
 ## 💻 扩展截图
 

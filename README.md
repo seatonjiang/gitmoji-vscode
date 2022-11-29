@@ -26,7 +26,7 @@ English | [简体中文](README.zh-CN.md) | [Português Brasileiro](README.pt-BR
 </p>
 
 <p align="center">
-    An emoji tool for your commit messages 😜
+    Gitmoji tool for git commit messages in VSCode
 </p>
 
 ## 💻 Screenshot

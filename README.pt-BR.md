@@ -26,7 +26,7 @@
 </p>
 
 <p align="center">
-    Uma ferramenta emoji para suas mensagens de compromisso 😜
+    Ferramenta Gitmoji para mensagens de compromisso de gitmoji em VSCode
 </p>
 
 ## 💻 Captura de tela
