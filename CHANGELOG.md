@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Gitmoji](https://gitmoji.dev/) for your commit messages.
 
+## v1.2.0 (2022-11-29)
+
+### Features
+
+- Sync with official.
+- Add multiple language translations.
+
 ## v1.1.2 (2022-03-07)
 
 ### Features
