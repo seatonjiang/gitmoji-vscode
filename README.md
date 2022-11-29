@@ -1,7 +1,7 @@
 English | [简体中文](README.zh-CN.md) | [Português Brasileiro](README.pt-BR.md) | [Português Europeu](README.pt-PT.md)
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/seatonjiang/gitmoji-vscode/main/images/gitmoji.gif" width="400">
+    <img src="assets/gitmoji.gif" width="400">
 </p>
 
 <p align="center">
@@ -26,14 +26,13 @@ English | [简体中文](README.zh-CN.md) | [Português Brasileiro](README.pt-BR
 </p>
 
 <p align="center">
-    <a href="https://github.com/carloscuesta/gitmoji">Gitmoji</a>
-    tool for git commit messages in VS Code
+    An emoji tool for your commit messages 😜
 </p>
 
 ## 💻 Screenshot
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/seatonjiang/gitmoji-vscode/main/images/about.gif">
+    <img src="assets/about.gif">
 </p>
 
 ## 📦 Install
@@ -47,15 +46,15 @@ English | [简体中文](README.zh-CN.md) | [Português Brasileiro](README.pt-BR
 
 ### Select output type
 
-- `outputType` - Configure the type of emoji output as needed. Default is `emoji`
+- `outputType` - Configure the type of emoji output as needed. Default is `emoji`.
 
 For emoji type:
 
-![emoji](https://raw.githubusercontent.com/seatonjiang/gitmoji-vscode/main/images/emoji.png)
+![emoji](assets/emoji.png)
 
 For code type:
 
-![code](https://raw.githubusercontent.com/seatonjiang/gitmoji-vscode/main/images/code.png)
+![code](assets/code.png)
 
 Sample configuration:
 
@@ -65,52 +64,44 @@ Sample configuration:
 }
 ```
 
-**Notice**: If you use Gitlab, type emoji, if you use Github, you can type code or emoji.
+> **Notice**: If you use Gitlab, type emoji, if you use Github, you can type code or emoji.
 
 ### Add configurable additionnal emojis
 
-- `additionalEmojis` - Add configurable additionnal emojis.
+- `addCustomEmoji` - Add custom emoji other than Gitmoji.
 
 Sample configuration:
 
 ```json
 {
-  "gitmoji.additionalEmojis": [
+  "gitmoji.addCustomEmoji": [
     {
-      "emoji": "🐛",
-      "code": ":bug:",
-      "description": "Fix a bug.",
-      "description_pt_br": "Corrigir o bug",
-      "description_pt_pt": "Corrigir a falha",
-      "description_zh_cn": "修复 BUG",
+      "emoji": "🧵",
+      "code": ":thread:",
+      "description": "Add or update code related to multithreading or concurrency"
     },
     {
-      "emoji": "🚑",
-      "code": ":ambulance:",
-      "description": "Critical hotfix.",
-      "description_pt_br": "Correção crítica",
-      "description_pt_pt": "Correcção crítica",
-      "description_zh_cn": "紧急热修复",
+      "emoji": "🦺",
+      "code": ":safety_vest:",
+      "description": "Add or update code related to validation"
     }
   ]
 }
 ```
 
-**Notice**: `description_zh_cn` is a chinese (zh_CN) version of the description. If empty, the english description will be used.
+### Only use your Custom emojis
 
-### Only use your additionnal emojis
-
-- `onlyUseAdditionalEmojis` - Use your additional emojis instead the ones from the extension.
+- `onlyUseCustomEmoji` - Only use your custom emoji, not the ones in the Gitmoji.
 
 Sample configuration:
 
 ```json
 {
-  "gitmoji.onlyUseAdditionalEmojis": true
+  "gitmoji.onlyUseCustomEmoji": true
 }
 ```
 
-### Search gitmoji by emoji code
+### Search Gitmoji by emoji code
 
 - `showEmojiCode` - Enable searching gitmojis by emoji code (example: ambulance will return hotfix).
 
