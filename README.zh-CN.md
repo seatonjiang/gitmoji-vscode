@@ -1,7 +1,7 @@
 [English](README.md) | 简体中文 | [Português Brasileiro](README.pt-BR.md) | [Português Europeu](README.pt-PT.md)
 
 <p align="center">
-    <img src="images/gitmoji.gif" width="400">
+    <img src="assets/gitmoji.gif" width="400">
 </p>
 
 <p align="center">
@@ -23,12 +23,12 @@
     <a href="https://github.com/seatonjiang/gitmoji-vscode/issues">功能需求</a>
 </p>
 
-<p align="center">VS Code 中用于提交说明的 <a href="https://github.com/carloscuesta/gitmoji">Gitmoji</a> 拓展</p>
+<p align="center">VSCode 中用于提交说明的 <a href="https://github.com/carloscuesta/gitmoji">Gitmoji</a> 拓展 😜</p>
 
 ## 💻 扩展截图
 
 <p align="center">
-    <img src="images/about.gif">
+    <img src="assets/about.gif">
 </p>
 
 ## 📦 安装扩展
@@ -44,15 +44,15 @@
 
 ### 表情符号输出类型
 
-- `outputType` - 根据需要配置表情符号的输出类型，默认为 `emoji`。
+- `outputType` - 配置表情符号的输出类型（默认为 `emoji` 模式）。
 
 emoji 模式的例子：
 
-![emoji](images/emoji.png)
+![emoji](assets/emoji.png)
 
 code 模式的例子：
 
-![code](images/code.png)
+![code](assets/code.png)
 
 示例配置：
 
@@ -62,54 +62,46 @@ code 模式的例子：
 }
 ```
 
-**提示**：如果在 Gitlab 或者 Coding 中使用，需要选择「code」模式；如果在 Github 中使用，可以随意选择「emoji」或「code」模式。
+> **提示**：如果在 Gitlab 或者 Coding 中使用，需要选择「code」模式；如果在 Github 中使用，可以随意选择「emoji」或「code」模式。
 
 ### 添加自定义表情符号
 
-- `additionalEmojis` - 根据需要添加自定义表情符号。
+- `addCustomEmoji` - 添加自定义表情符号。
 
 示例配置：
 
 ```json
 {
-  "gitmoji.additionalEmojis": [
+  "gitmoji.addCustomEmoji": [
     {
-      "emoji": "🐛",
-      "code": ":bug:",
-      "description": "Fix a bug.",
-      "description_pt_br": "Corrigir o bug",
-      "description_pt_pt": "Corrigir a falha",
-      "description_zh_cn": "修复 BUG",
+      "emoji": "🧵",
+      "code": ":thread:",
+      "description": "添加或更新与多线程或并发相关的代码"
     },
     {
-      "emoji": "🚑",
-      "code": ":ambulance:",
-      "description": "Critical hotfix.",
-      "description_pt_br": "Correção crítica",
-      "description_pt_pt": "Correcção crítica",
-      "description_zh_cn": "紧急热修复",
+      "emoji": "🦺",
+      "code": ":safety_vest:",
+      "description": "添加或更新与验证相关的代码"
     }
   ]
 }
 ```
 
-**提示**：`description_zh_cn` 是中文模式加载的内容，改选项是可选的，如果留空，将默认显示 `description` 中的内容。
-
 ### 仅使用自定义表情符号
 
-- `onlyUseAdditionalEmojis` - 仅使用自定义添加的表情符号，而不使用扩展中自带的表情符号，该功能默认不开启。
+- `onlyUseCustomEmoji` - 仅使用自定义添加的表情符号，而不使用扩展中自带的表情符号（该功能默认关闭）。
 
 示例配置：
 
 ```json
 {
-  "gitmoji.onlyUseAdditionalEmojis": true
+  "gitmoji.onlyUseCustomEmoji": true
 }
 ```
 
 ### 通过简码搜索表情符号
 
-- `showEmojiCode` - 开启通过 emoji 简码搜索表情符号，例如搜索 ambulance 会找到 🚑 ，该功能默认不开启。
+- `showEmojiCode` - 开启通过简码搜索表情符号功能（该功能默认关闭）。
 
 示例配置：
 

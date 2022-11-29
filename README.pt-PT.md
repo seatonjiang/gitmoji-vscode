@@ -1,7 +1,7 @@
 [English](README.md) | [简体中文](README.zh-CN.md) | [Português Brasileiro](README.pt-BR.md) | Português Europeu
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/seatonjiang/gitmoji-vscode/main/images/gitmoji.gif" width="400">
+    <img src="assets/gitmoji.gif" width="400">
 </p>
 
 <p align="center">
@@ -26,14 +26,13 @@
 </p>
 
 <p align="center">
-    <a href="https://github.com/carloscuesta/gitmoji">Gitmoji</a>
-    ferramenta para a mensagem de <i>commit</i> de <i>git</i> no VSCode
+    Uma ferramenta emoji para as suas mensagens de compromisso 😜
 </p>
 
 ## 💻 Captura de ecrã
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/seatonjiang/gitmoji-vscode/main/images/about.gif">
+    <img src="assets/about.gif">
 </p>
 
 ## 📦 Instalação
@@ -51,11 +50,11 @@
 
 Para a categoria de *emoji:*
 
-![emoji](https://raw.githubusercontent.com/seatonjiang/gitmoji-vscode/main/images/emoji.png)
+![emoji](assets/emoji.png)
 
 Para a categoria de código:
 
-![code](https://raw.githubusercontent.com/seatonjiang/gitmoji-vscode/main/images/code.png)
+![code](assets/code.png)
 
 Amostra de definição:
 
@@ -69,44 +68,36 @@ Amostra de definição:
 
 ### Definição da adição de novos *emojis*
 
-- `additionalEmojis` - Configurar a adição de novos *emojis.*
+- `addCustomEmoji` - Configurar a adição de novos *emojis.*
 
 Amostra de definição:
 
 ```json
 {
-  "gitmoji.additionalEmojis": [
+  "gitmoji.addCustomEmoji": [
     {
-      "emoji": "🐛",
-      "code": ":bug:",
-      "description": "Fix a bug.",
-      "description_pt_br": "Corrigir o bug",
-      "description_pt_pt": "Corrigir a falha",
-      "description_zh_cn": "修复 BUG",
+      "emoji": "🧵",
+      "code": ":thread:",
+      "description": "Adicionar ou actualizar código relacionado com multithreading ou concurrency"
     },
     {
-      "emoji": "🚑",
-      "code": ":ambulance:",
-      "description": "Critical hotfix.",
-      "description_pt_br": "Correção crítica",
-      "description_pt_pt": "Correcção crítica",
-      "description_zh_cn": "紧急热修复",
+      "emoji": "🦺",
+      "code": ":safety_vest:",
+      "description": "Adicionar ou actualizar o código relacionado com a validação"
     }
   ]
 }
 ```
 
-**Observação**: `description_zh_cn` é uma versão chinesa da descrição e `description_pt_pt` uma versão portuguesa europeia da descrição. Se a descrição for vazia, a versão inglesa será utilizada.
-
 ### Utilizar apenas os novos *emojis*
 
-- `onlyUseAdditionalEmojis` - Utilizar seus novos *emojis* ao invés daqueles da extensão.
+- `onlyUseCustomEmoji` - Utilizar seus novos *emojis* ao invés daqueles da extensão.
 
 Amostra de definição:
 
 ```json
 {
-  "gitmoji.onlyUseAdditionalEmojis": true
+  "gitmoji.onlyUseCustomEmoji": true
 }
 ```
 
