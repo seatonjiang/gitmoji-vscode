@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [Gitmoji](https://gitmoji.dev/) for your commit messages.
 
+## v1.2.1 (2022-12-03)
+
+### Features
+
+- Increase the minimum requirements for VSCode versions (v1.73.0).
+
 ## v1.2.0 (2022-11-29)
 
 ### Features
