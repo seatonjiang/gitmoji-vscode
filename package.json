@@ -2,7 +2,7 @@
     "name": "gitmoji-vscode",
     "displayName": "Gitmoji",
     "description": "Gitmoji tool for git commit messages in VSCode",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "author": {
         "name": "Seaton Jiang",
         "email": "hi@seatonjiang.com"
@@ -18,7 +18,7 @@
     },
     "homepage": "https://github.com/seatonjiang/gitmoji-vscode/blob/main/README.md",
     "engines": {
-        "vscode": "^1.40.0"
+        "vscode": "^1.73.0"
     },
     "keywords": [
         "git",
@@ -112,7 +112,7 @@
         "@types/glob": "^8.0.0",
         "@types/mocha": "^10.0.1",
         "@types/node": "^18.11.9",
-        "@types/vscode": "^1.40.0",
+        "@types/vscode": "^1.73.0",
         "@vscode/test-electron": "^2.2.0",
         "@vscode/l10n-dev": "^0.0.19",
         "glob": "^8.0.3",
