@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [Gitmoji](https://gitmoji.dev/) for your commit messages.
 
+## v1.2.2 (2022-12-08)
+
+### Bug Fixes
+
+- Mark _rootUri as optional property.
+
 ## v1.2.1 (2022-12-03)
 
 ### Features
