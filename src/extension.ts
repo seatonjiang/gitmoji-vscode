@@ -41,8 +41,9 @@ export function activate(context: vscode.ExtensionContext) {
                 let outputType = vscode.workspace.getConfiguration().get('gitmoji.outputType');
 
                 if (uri) {
+                    const uriPath = uri._rootUri?.path || uri.rootUri.path;
                     let selectedRepository = git.repositories.find(repository => {
-                        return repository.rootUri.path === uri._rootUri.path;
+                        return repository.rootUri.path === uriPath;
                     });
                     if (selectedRepository) {
                         if (outputType === 'emoji') {
