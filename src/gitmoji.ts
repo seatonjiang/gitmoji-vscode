@@ -1,4 +1,4 @@
-// Links: https://github.com/carloscuesta/gitmoji/blob/master/src/data/gitmojis.json
+// Links: https://github.com/carloscuesta/gitmoji/blob/master/packages/gitmojis/src/gitmojis.json
 import * as vscode from 'vscode';
 
 interface gitmojiList {
