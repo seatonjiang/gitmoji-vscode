@@ -3,7 +3,7 @@
     "gitmoji.config.addCustomEmoji": "Adicionar emoji personalizados para além de Gitmoji",
     "gitmoji.config.onlyUseCustomEmoji": "Use apenas os seus emoji personalizados, não os do Gitmoji",
     "gitmoji.config.outputType": "Configurar o tipo de saída de Gitmoji",
-    "gitmoji.config.outputType.code": "Adequado para Github, Gitee, etc",
-    "gitmoji.config.outputType.emoji": "Adequado para Github, Gitlab, Codificação, etc",
+    "gitmoji.config.outputType.code": "Adequado para GitHub, Gitee, etc",
+    "gitmoji.config.outputType.emoji": "Adequado para GitHub, Gitlab, Codificação, etc",
     "gitmoji.config.showEmojiCode": "Activar a pesquisa de gitmojis por código emoji (exemplo: ambulance devolverá o hotfix)"
 }

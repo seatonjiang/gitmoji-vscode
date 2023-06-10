@@ -3,7 +3,7 @@
     "gitmoji.config.addCustomEmoji": "添加自定义表情符号",
     "gitmoji.config.onlyUseCustomEmoji": "仅使用自定义添加的表情符号，而不使用扩展中自带的表情符号",
     "gitmoji.config.outputType": "配置表情符号的输出类型",
-    "gitmoji.config.outputType.code": "适用于 Github、Gitee 等平台",
-    "gitmoji.config.outputType.emoji": "适用于 Github、Gitlab、Coding 等平台",
+    "gitmoji.config.outputType.code": "适用于 GitHub、Gitee 等平台",
+    "gitmoji.config.outputType.emoji": "适用于 GitHub、Gitlab、Coding 等平台",
     "gitmoji.config.showEmojiCode": "开启通过简码搜索表情符号功能"
 }

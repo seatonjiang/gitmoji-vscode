@@ -62,7 +62,7 @@ code 模式的例子：
 }
 ```
 
-> **提示**：如果在 Gitlab 或者 Coding 中使用，需要选择「code」模式；如果在 Github 中使用，可以随意选择「emoji」或「code」模式。
+> **提示**：如果在 Gitlab 或者 Coding 中使用，需要选择「code」模式；如果在 GitHub 中使用，可以随意选择「emoji」或「code」模式。
 
 ### 添加自定义表情符号
 

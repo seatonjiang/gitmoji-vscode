@@ -64,7 +64,7 @@ Sample configuration:
 }
 ```
 
-> **Notice**: If you use Gitlab, type emoji, if you use Github, you can type code or emoji.
+> **Notice**: If you use Gitlab, type emoji, if you use GitHub, you can type code or emoji.
 
 ### Add configurable additionnal emojis
 
