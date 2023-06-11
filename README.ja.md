@@ -23,7 +23,7 @@
     <a href="https://github.com/seatonjiang/gitmoji-vscode/issues">機能リクエスト</a>
 </p>
 
-<p align="center">VSCode内のGitコミットメッセージ用Gitmojiツール</p>
+<p align="center">VSCode 内の Git コミットメッセージ用 Gitmoji ツール</p>
 
 ## 💻 スクリーンショット
 
@@ -60,7 +60,7 @@ code タイプの出力例：
 }
 ```
 
-> **注意**：GitlabやCodingで使用する場合は、「code」タイプを選択しなければなりません。GitHubで使用する場合は、任意のタイプを選択できます。
+> **注意**： Gitlab や Coding で使用する場合は、「code」タイプを選択しなければなりません。 GitHub で使用する場合は、任意のタイプを選択できます。
 
 ### カスタム絵文字を設定する
 
@@ -87,7 +87,7 @@ code タイプの出力例：
 
 ### カスタム絵文字のみを使用する
 
-- `onlyUseCustomEmoji` - （デフォルトでは無効）拡張機能にもとから含まれるデフォルトの絵文字ではなく、自身でカスタマイズした絵文字のみを使用する。
+- `onlyUseCustomEmoji` - 拡張機能にもとから含まれるデフォルトの絵文字ではなく、自身でカスタマイズした絵文字のみを使用する（デフォルトでは無効）。
 
 例：
 
@@ -109,10 +109,10 @@ code タイプの出力例：
 }
 ```
 
-## 🤝 参与共建
+## 🤝 コントリビュートについて
 
 私たちはすべての貢献を歓迎します。どんなアイデアでもプルリクエストとして、あるいはイシューとして提出することができます! :)
 
-## 📃 开源许可
+## 📃 ライセンス
 
-このプロジェクトはMITライセンスで公開されています。詳しくは [LICENCE](https://github.com/seatonjiang/gitmoji-vscode/blob/main/LICENSE) をご覧ください。
+このプロジェクトは MIT ライセンスで公開されています。詳しくは [LICENSE](https://github.com/seatonjiang/gitmoji-vscode/blob/main/LICENSE) をご覧ください。
