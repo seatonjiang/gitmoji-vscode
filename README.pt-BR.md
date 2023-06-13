@@ -1,4 +1,4 @@
-[English](README.md) | [简体中文](README.zh-CN.md) | Português Brasileiro | [Português Europeu](README.pt-PT.md)
+[English](README.md) | [简体中文](README.zh-CN.md) | Português Brasileiro | [Português Europeu](README.pt-PT.md) | [日本語](README.ja.md)
 
 <p align="center">
     <img src="assets/gitmoji.gif" width="400">
@@ -46,7 +46,7 @@
 
 ### Selecione o tipo de saída
 
-- `outputType` - Configurar o tipo de saída de *emoji,* conforme necessário. O padrão é `emoji`. 
+- `outputType` - Configurar o tipo de saída de *emoji,* conforme necessário. O padrão é `emoji`.
 
 Para o tipo de *emoji:*
 

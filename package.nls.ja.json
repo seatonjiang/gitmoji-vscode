@@ -1,0 +1,9 @@
+{
+    "gitmoji.command.showGitmoji.title": "絵文字を選択",
+    "gitmoji.config.addCustomEmoji": "独自の絵文字を追加する",
+    "gitmoji.config.onlyUseCustomEmoji": "拡張機能にもとから含まれるデフォルトの絵文字ではなく、自身でカスタマイズした絵文字のみを使用する",
+    "gitmoji.config.outputType": "絵文字の出力タイプの設定",
+    "gitmoji.config.outputType.code": "GitHub、Giteeなどで利用可能",
+    "gitmoji.config.outputType.emoji": "GitHub、Gitlab、Codingなどで利用可能",
+    "gitmoji.config.showEmojiCode": "ショートコードで絵文字を検索できるようにする"
+}
