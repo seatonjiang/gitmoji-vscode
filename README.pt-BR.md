@@ -113,6 +113,18 @@ Amostra de configuração:
 }
 ```
 
+### Insira o emoji no final do commit
+
+- `asSuffix` - Ative a inserção do emoji como um sufixo da mensagem de commit.
+
+Amostra de configuração:
+
+```json
+{
+  "gitmoji.asSuffix": true
+}
+```
+
 ## 🤝 Contribuição
 
 Nós damos as boas-vindas a quaisquer contribuições. Você pode enviar quaisquer ideias, assim como *pull requests* ou *issues*. Tenha um ótimo tempo! :-)
