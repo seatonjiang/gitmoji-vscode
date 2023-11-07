@@ -1,0 +1,9 @@
+{
+    "gitmoji.command.showGitmoji.title": "Выберите Gitmoji",
+    "gitmoji.config.addCustomEmoji": "Добавьте пользовательские эмодзи, отличные от Gitmoji",
+    "gitmoji.config.onlyUseCustomEmoji": "Используйте только свои собственные эмодзи, а не те, что есть в Gitmoji",
+    "gitmoji.config.outputType": "При необходимости настройте тип вывода эмодзи",
+    "gitmoji.config.outputType.code": "Подходит для GitHub, Git и т.д",
+    "gitmoji.config.outputType.emoji": "Подходит для GitHub, Gitlab, кодирования и т.д",
+    "gitmoji.config.showEmojiCode": "Включите поиск gitmojis по коду эмодзи (пример: скорая помощь вернет исправление)"
+}

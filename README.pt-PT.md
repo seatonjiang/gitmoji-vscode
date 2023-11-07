@@ -1,4 +1,4 @@
-[English](README.md) | [简体中文](README.zh-CN.md) | [Português Brasileiro](README.pt-BR.md) | Português Europeu | [日本語](README.ja.md)
+[English](README.md) | [简体中文](README.zh-CN.md) | [Português Brasileiro](README.pt-BR.md) | **Português Europeu** | [日本語](README.ja.md) | [Русский](README.ru-RU.md)
 
 <p align="center">
     <img src="assets/gitmoji.gif" width="400">
