@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.2.5 (2023-12-26)
+
+- Add config to insert emoji at the end of the commit.
+- Sync with official.
+
 ## v1.2.4 (2023-08-16)
 
 - Upgrade dependent.
