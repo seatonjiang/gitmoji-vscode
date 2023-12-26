@@ -5,5 +5,6 @@
     "gitmoji.config.outputType": "Configurar o tipo de saída de Gitmoji",
     "gitmoji.config.outputType.code": "Adequado para GitHub, Gitee, etc",
     "gitmoji.config.outputType.emoji": "Adequado para GitHub, Gitlab, Codificação, etc",
-    "gitmoji.config.showEmojiCode": "Habilitar gitmojis de busca por código emoji (exemplo: ambulance retornará hotfix)"
+    "gitmoji.config.showEmojiCode": "Habilitar gitmojis de busca por código emoji (exemplo: ambulance retornará hotfix)",
+    "gitmoji.config.asSuffix": "Inserção de Gitmoji no final das mensagens"
 }

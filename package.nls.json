@@ -5,5 +5,6 @@
     "gitmoji.config.outputType": "Configure the type of emoji output as needed",
     "gitmoji.config.outputType.code": "Suitable for GitHub, Gitee etc",
     "gitmoji.config.outputType.emoji": "Suitable for GitHub, Gitlab, Coding, etc",
-    "gitmoji.config.showEmojiCode": "Enable searching gitmojis by emoji code (example: ambulance will return hotfix)"
+    "gitmoji.config.showEmojiCode": "Enable searching gitmojis by emoji code (example: ambulance will return hotfix)",
+    "gitmoji.config.asSuffix": "Insertion of Gitmoji at the end of messages"
 }

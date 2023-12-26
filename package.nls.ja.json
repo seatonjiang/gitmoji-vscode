@@ -5,5 +5,6 @@
     "gitmoji.config.outputType": "絵文字の出力タイプの設定",
     "gitmoji.config.outputType.code": "GitHub、Giteeなどで利用可能",
     "gitmoji.config.outputType.emoji": "GitHub、Gitlab、Codingなどで利用可能",
-    "gitmoji.config.showEmojiCode": "ショートコードで絵文字を検索できるようにする"
+    "gitmoji.config.showEmojiCode": "ショートコードで絵文字を検索できるようにする",
+    "gitmoji.config.asSuffix": "メッセージの最後にGitmojiを挿入"
 }

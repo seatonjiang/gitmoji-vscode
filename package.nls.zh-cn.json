@@ -5,5 +5,6 @@
     "gitmoji.config.outputType": "配置表情符号的输出类型",
     "gitmoji.config.outputType.code": "适用于 GitHub、Gitee 等平台",
     "gitmoji.config.outputType.emoji": "适用于 GitHub、Gitlab、Coding 等平台",
-    "gitmoji.config.showEmojiCode": "开启通过简码搜索表情符号功能"
+    "gitmoji.config.showEmojiCode": "开启通过简码搜索表情符号功能",
+    "gitmoji.config.asSuffix": "开启在消息末尾插入表情符号功能"
 }
