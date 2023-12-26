@@ -38,27 +38,19 @@ export function activate(context: vscode.ExtensionContext) {
         vscode.window.showQuickPick(items).then(function (selected) {
             if (selected) {
                 vscode.commands.executeCommand('workbench.view.scm');
-                let outputType = vscode.workspace.getConfiguration().get('gitmoji.outputType');
+                const outputType = vscode.workspace.getConfiguration().get('gitmoji.outputType');
+                const valueToAdd = outputType === 'emoji' ? selected.emoji : selected.code;
+                const asSuffix: boolean | undefined = vscode.workspace.getConfiguration().get('gitmoji.asSuffix') || false;
 
                 if (uri) {
                     const uriPath = uri._rootUri?.path || uri.rootUri.path;
-                    let selectedRepository = git.repositories.find(repository => {
-                        return repository.rootUri.path === uriPath;
-                    });
+                    let selectedRepository = git.repositories.find(repository => repository.rootUri.path === uriPath);
                     if (selectedRepository) {
-                        if (outputType === 'emoji') {
-                            prefixCommit(selectedRepository, selected.emoji);
-                        } else {
-                            prefixCommit(selectedRepository, selected.code);
-                        }
+                        updateCommit(selectedRepository, valueToAdd, asSuffix);
                     }
                 } else {
                     for (let repo of git.repositories) {
-                        if (outputType === 'emoji') {
-                            prefixCommit(repo, selected.emoji);
-                        } else {
-                            prefixCommit(repo, selected.code);
-                        }
+                        updateCommit(repo, valueToAdd, asSuffix);
                     }
                 }
             }
@@ -68,8 +60,12 @@ export function activate(context: vscode.ExtensionContext) {
     context.subscriptions.push(disposable);
 }
 
-function prefixCommit(repository: Repository, prefix: String) {
-    repository.inputBox.value = `${prefix} ${repository.inputBox.value}`;
+function updateCommit(repository: Repository, valueOfGitmoji: String, asSuffix: boolean) {
+    if (!asSuffix){
+        repository.inputBox.value = `${valueOfGitmoji} ${repository.inputBox.value}`;
+    } else {
+        repository.inputBox.value = `${repository.inputBox.value} ${valueOfGitmoji}`;
+    }
 }
 
 function getGitExtension() {

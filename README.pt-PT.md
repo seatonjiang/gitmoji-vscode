@@ -113,6 +113,18 @@ Amostra de definição:
 }
 ```
 
+### Inserir emoji no final do compromisso
+
+- `asSuffix` - Ative a inserção de emoji como um sufixo da mensagem de compromisso.
+
+Amostra de definição:
+
+```json
+{
+  "gitmoji.asSuffix": true
+}
+```
+
 ## 🤝 Contribuição
 
 Quaisquer contribuições sempre serão bem-vindas. Você pode enviar quaisquer ideias, solicitações de *pull* ou problemas (*issues*). Tenha um excelente tempo! :-)

@@ -98,6 +98,11 @@
                     "type": "boolean",
                     "default": false,
                     "description": "%gitmoji.config.showEmojiCode%"
+                },
+                "gitmoji.asSuffix": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "%gitmoji.config.asSuffix%"
                 }
             }
         }
