@@ -10,7 +10,7 @@
     "Add or update the UI and style files": "UIやスタイルファイルの追加/更新",
     "Begin a project": "プロジェクトの開始",
     "Add, update, or pass tests": "テストの追加/更新/合格",
-    "Fix security issues": "セキュリティ問題の修正",
+    "Fix security or privacy issues": "セキュリティやプライバシーに関する問題の修正",
     "Add or update secrets": "シークレットの追加/更新",
     "Release/Version tags": "リリース/バージョンタグ",
     "Fix compiler/linter warnings": "コンパイラ/リンターの警告を修正",

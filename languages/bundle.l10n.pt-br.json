@@ -10,7 +10,7 @@
     "Add or update the UI and style files": "Adicionar ou atualizar os arquivos de interface do usuário e de estilo",
     "Begin a project": "Iniciar um projeto",
     "Add, update, or pass tests": "Adicionar, atualizar ou passar testes",
-    "Fix security issues": "Corrigir problemas de segurança",
+    "Fix security or privacy issues": "Corrigir problemas de segurança ou privacidade",
     "Add or update secrets": "Adicionar ou atualizar as chaves secretas",
     "Release/Version tags": "Tags de lançamento ou versão",
     "Fix compiler/linter warnings": "Corrigir avisos do compilador ou linter",

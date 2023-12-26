@@ -10,7 +10,7 @@
     "Add or update the UI and style files": "添加或更新 UI 样式文件",
     "Begin a project": "初次提交",
     "Add, update, or pass tests": "添加、更新或通过测试",
-    "Fix security issues": "修复安全问题",
+    "Fix security or privacy issues": "修复安全或隐私问题",
     "Add or update secrets": "添加或更新 secrets",
     "Release/Version tags": "Release / Version 标签",
     "Fix compiler/linter warnings": "修复编译器 / 链接器警告",

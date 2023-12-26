@@ -66,7 +66,7 @@ let Gitmoji: Array<gitmojiList> = [
     {
         emoji: '🔒️',
         code: ':lock:',
-        description: vscode.l10n.t('Fix security issues'),
+        description: vscode.l10n.t('Fix security or privacy issues'),
     },
     {
         emoji: '🔐',
