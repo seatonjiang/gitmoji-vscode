@@ -1,4 +1,4 @@
-[English](README.md) | [简体中文](README.zh-CN.md) | [Português Brasileiro](README.pt-BR.md) | Português Europeu | [日本語](README.ja.md)
+[English](README.md) | [简体中文](README.zh-CN.md) | [Português Brasileiro](README.pt-BR.md) | **Português Europeu** | [日本語](README.ja.md)
 
 <p align="center">
     <img src="assets/gitmoji.gif" width="400">
@@ -127,7 +127,7 @@ Amostra de definição:
 
 ## 🤝 Contribuição
 
-Quaisquer contribuições sempre serão bem-vindas. Você pode enviar quaisquer ideias, solicitações de *pull* ou problemas (*issues*). Tenha um excelente tempo! :-)
+Quaisquer contribuições sempre serão bem-vindas. Você pode enviar quaisquer ideias, solicitações de *pull* ou problemas (*issues*). Tenha um excelente tempo!
 
 ## 📃 Licença
 

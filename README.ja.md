@@ -1,4 +1,4 @@
-[English](README.md) | [简体中文](README.zh-CN.md) | [Português Brasileiro](README.pt-BR.md) | [Português Europeu](README.pt-PT.md) | 日本語
+[English](README.md) | [简体中文](README.zh-CN.md) | [Português Brasileiro](README.pt-BR.md) | [Português Europeu](README.pt-PT.md) | **日本語**
 
 <p align="center">
     <img src="assets/gitmoji.gif" width="400">
@@ -124,7 +124,7 @@ code タイプの出力例：
 
 ## 🤝 コントリビュートについて
 
-私たちはすべての貢献を歓迎します。どんなアイデアでもプルリクエストとして、あるいはイシューとして提出することができます! :)
+私たちはすべての貢献を歓迎します。どんなアイデアでもプルリクエストとして、あるいはイシューとして提出することができます!
 
 ## 📃 ライセンス
 

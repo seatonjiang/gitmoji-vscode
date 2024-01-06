@@ -1,4 +1,4 @@
-[English](README.md) | 简体中文 | [Português Brasileiro](README.pt-BR.md) | [Português Europeu](README.pt-PT.md) | [日本語](README.ja.md)
+[English](README.md) | **简体中文** | [Português Brasileiro](README.pt-BR.md) | [Português Europeu](README.pt-PT.md) | [日本語](README.ja.md)
 
 <p align="center">
     <img src="assets/gitmoji.gif" width="400">
@@ -126,7 +126,7 @@ code 模式的例子：
 
 ## 🤝 参与共建
 
-我们欢迎所有的贡献，你可以将任何想法作为 pull requests 或 issues 提交，顺颂商祺 :)
+我们欢迎所有的贡献，你可以将任何想法作为 Pull requests 或 Issues 提交，顺颂商祺！
 
 ## 📃 开源许可
 

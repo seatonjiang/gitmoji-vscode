@@ -1,4 +1,4 @@
-[English](README.md) | [简体中文](README.zh-CN.md) | Português Brasileiro | [Português Europeu](README.pt-PT.md) | [日本語](README.ja.md)
+[English](README.md) | [简体中文](README.zh-CN.md) | **Português Brasileiro** | [Português Europeu](README.pt-PT.md) | [日本語](README.ja.md)
 
 <p align="center">
     <img src="assets/gitmoji.gif" width="400">
@@ -127,7 +127,7 @@ Amostra de configuração:
 
 ## 🤝 Contribuição
 
-Nós damos as boas-vindas a quaisquer contribuições. Você pode enviar quaisquer ideias, assim como *pull requests* ou *issues*. Tenha um ótimo tempo! :-)
+Nós damos as boas-vindas a quaisquer contribuições. Você pode enviar quaisquer ideias, assim como *pull requests* ou *issues*. Tenha um ótimo tempo!
 
 ## 📃 Licença
 
