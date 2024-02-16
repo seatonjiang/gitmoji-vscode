@@ -46,7 +46,7 @@
 
 ### 출력 타입
 
-- `outputType` - (필요시) 이모지의 출력타입을 설정합니다. 기본값은  `emoji` 입니다.
+- `outputType` - (필요시) 이모지의 출력 타입을 설정합니다. 기본값은  `emoji`입니다.
 
 이모지 타입 예시:
 
@@ -64,11 +64,11 @@
 }
 ```
 
-> **중요**: Gitlab 사용중이라면 `emoji` 타입만 가능합니다. Github 에선 `code` ,`emoji` 모두 사용가능합니다. 
+> **중요** : Gitlab 사용 중이라면 `emoji` 타입만 가능합니다. Github에선 `code` ,`emoji` 모두 사용 가능합니다. 
 
 ### 이모지 추가하기
 
-- `addCustomEmoji` - 깃모지 이외의 사용자 정의 이모지를 추가합니다.
+- `addCustomEmoji` - Gitmoji 이외의 사용자 정의 이모지를 추가합니다.
 
 간단한 구성 예시:
 
@@ -91,7 +91,7 @@
 
 ### 사용자 정의 이모지만 사용하려면
 
-- `onlyUseCustomEmoji` - Gitmoji를 사용하지않고 사용자 정의 이모지만 사용합니다.
+- `onlyUseCustomEmoji` - Gitmoji를 사용하지않고 사용자 정의 이모지만 사용 합니다.
 
 간단한 구성 예시:
 
@@ -103,7 +103,7 @@
 
 ### 이모지 코드로 깃모지 찾기
 
-- `showEmojiCode` - 이모지 코드로 깃모지를 검색합니다. (예시: ambulance 키워드로 검색시 hotfix 를 검색합니다.).
+- `showEmojiCode` - 이모지 코드로 검색합니다. (예시: ambulance 키워드로 검색시 hotfix 를 검색합니다.)
 
 간단한 구성 예시:
 
@@ -127,7 +127,7 @@
 
 ## 🤝 Contributing
 
-모든 기여에 대해 환영합니다. 프로젝트의 아이디어 를 issue 나 PR로 남겨주세요, 감사합니다.!
+모든 기여에 대해 환영합니다. 프로젝트의 아이디어를 issue 나 PR로 남겨주세요, 감사합니다!
 
 ## 📃 License
 
