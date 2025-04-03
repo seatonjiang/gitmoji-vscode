@@ -1,10 +1,10 @@
 {
-    "gitmoji.command.showGitmoji.title": "Gitmoji 고르기",
-    "gitmoji.config.addCustomEmoji": "사용자 정의 이모지 추가합니다.",
-    "gitmoji.config.onlyUseCustomEmoji": "사용자 정의 이모지 만 사용합니다.",
-    "gitmoji.config.outputType": "(필요시) 이모지의 출력타입을 설정합니다. ",
-    "gitmoji.config.outputType.code": "GitHub、Gitee 등에서 사용할 수 있습니다.",
-    "gitmoji.config.outputType.emoji": "GitHub、Gitlab、Coding 등에 사용할 수 있습니다.",
-    "gitmoji.config.showEmojiCode": "이모지 코드를 통해 깃모지를 검색할수 있도록 합니다. (예: ambulance 로 검색시 hotfix 의 결과를 확인할수 있음)",
-    "gitmoji.config.asSuffix": "커밋메세지 마지막에 깃모지를 추가합니다."
+    "gitmoji.command.showGitmoji.title": "Gitmoji 선택하기",
+    "gitmoji.config.addCustomEmoji": "사용자 정의 이모지를 추가합니다.",
+    "gitmoji.config.onlyUseCustomEmoji": "사용자 정의 이모지만 사용합니다.",
+    "gitmoji.config.outputType": "(필요한 경우) 이모지 출력 형식을 설정합니다.",
+    "gitmoji.config.outputType.code": "GitHub, Gitee 등과 호환됩니다.",
+    "gitmoji.config.outputType.emoji": "GitHub, Gitlab, Coding 등과 호환됩니다.",
+    "gitmoji.config.showEmojiCode": "이모지 코드를 사용해 Gitmoji를 검색할 수 있도록 합니다. (예: 'ambulance'를 검색하면 'hotfix' 결과가 표시됨)",
+    "gitmoji.config.asSuffix": "커밋 메시지 끝에 Gitmoji를 추가합니다."
 }
