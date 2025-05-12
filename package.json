@@ -1,5 +1,5 @@
 {
-    "name": "gitmoji-vscode",
+    "name": "gitmoji-vscode-test",
     "displayName": "Gitmoji",
     "description": "Gitmoji tool for git commit messages in VSCode",
     "version": "1.2.5",
@@ -103,6 +103,11 @@
                     "type": "boolean",
                     "default": false,
                     "description": "%gitmoji.config.asSuffix%"
+                },
+                "gitmoji.autoMatch": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Whether to enable auto-matching emoji based on commit message"
                 }
             }
         }
