@@ -1,5 +1,5 @@
 {
-    "name": "gitmoji-vscode-test",
+    "name": "gitmoji-vscode",
     "displayName": "Gitmoji",
     "description": "Gitmoji tool for git commit messages in VSCode",
     "version": "1.2.5",
