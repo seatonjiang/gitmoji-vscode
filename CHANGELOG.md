@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.3.0 (2025-06-04)
+
+- Add offline support emoji.
+- Add Gitmoji auto-suggestion based on commit message.
+- Upgrade dependent.
+
 ## v1.2.5 (2023-12-26)
 
 - Add config to insert emoji at the end of the commit.
