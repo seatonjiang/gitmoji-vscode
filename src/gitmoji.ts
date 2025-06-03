@@ -373,6 +373,11 @@ let Gitmoji: Array<gitmojiList> = [
         code: ':safety_vest:',
         description: vscode.l10n.t('Add or update code related to validation'),
     },
+    {
+        emoji: '✈️',
+        code: ':airplane:',
+        description: vscode.l10n.t('Improve offline support'),
+    },
 ];
 
 export default Gitmoji;
