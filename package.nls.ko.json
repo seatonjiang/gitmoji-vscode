@@ -6,5 +6,6 @@
     "gitmoji.config.outputType.code": "GitHub, Gitee 등과 호환됩니다.",
     "gitmoji.config.outputType.emoji": "GitHub, Gitlab, Coding 등과 호환됩니다.",
     "gitmoji.config.showEmojiCode": "이모지 코드를 사용해 Gitmoji를 검색할 수 있도록 합니다. (예: 'ambulance'를 검색하면 'hotfix' 결과가 표시됨)",
-    "gitmoji.config.asSuffix": "커밋 메시지 끝에 Gitmoji를 추가합니다."
+    "gitmoji.config.asSuffix": "커밋 메시지 끝에 Gitmoji를 추가합니다.",
+    "gitmoji.config.autoMatch": "커밋 메시지에 따라 자동으로 이모지를 매칭할지 여부"
 }

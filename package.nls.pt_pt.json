@@ -6,5 +6,6 @@
     "gitmoji.config.outputType.code": "Adequado para GitHub, Gitee, etc",
     "gitmoji.config.outputType.emoji": "Adequado para GitHub, Gitlab, Codificação, etc",
     "gitmoji.config.showEmojiCode": "Activar a pesquisa de gitmojis por código emoji (exemplo: ambulance devolverá o hotfix)",
-    "gitmoji.config.asSuffix": "Inserção de Gitmoji no final das mensagens"
+    "gitmoji.config.asSuffix": "Inserção de Gitmoji no final das mensagens",
+    "gitmoji.config.autoMatch": "Ativar a correspondência automática de emoji com base na mensagem de commit"
 }

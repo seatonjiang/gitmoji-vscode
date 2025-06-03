@@ -125,6 +125,17 @@ Sample configuration:
 }
 ```
 
+### Auto-match emoticons based on submitted messages
+
+- `autoMatch` - Automatically matches emoji based on message submissions.
+
+Sample configuration:
+
+```json
+{
+  "gitmoji.autoMatch": true
+}
+
 ## 🤝 Contributing
 
 We welcome all contributions. You can submit any ideas as Pull requests or as Issues, have a good time!
