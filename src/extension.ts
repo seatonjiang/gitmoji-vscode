@@ -12,16 +12,25 @@ export function activate(context: vscode.ExtensionContext) {
         }
 
         let addCustomEmoji: Array<any> = vscode.workspace.getConfiguration().get('gitmoji.addCustomEmoji') || [];
-
         const showEmojiCode: boolean | undefined = vscode.workspace.getConfiguration().get('gitmoji.showEmojiCode');
+        const onlyUseCustomEmoji: boolean | undefined = vscode.workspace.getConfiguration().get('gitmoji.onlyUseCustomEmoji');
+        const autoMatch: boolean | undefined = vscode.workspace.getConfiguration().get('gitmoji.autoMatch');
+        const outputType = vscode.workspace.getConfiguration().get('gitmoji.outputType');
+        const asSuffix: boolean | undefined = vscode.workspace.getConfiguration().get('gitmoji.asSuffix') || false;
 
-        let emojis = [];
-        let onlyUseCustomEmoji: boolean | undefined = vscode.workspace.getConfiguration().get('gitmoji.onlyUseCustomEmoji');
+        let emojis = onlyUseCustomEmoji === true ? [...addCustomEmoji] : [...Gitmoji, ...addCustomEmoji];
 
-        if (onlyUseCustomEmoji === true) {
-            emojis = [...addCustomEmoji];
-        } else {
-            emojis = [...Gitmoji, ...addCustomEmoji];
+        // fetch comment to auto match emoji
+        let comment = '';
+        if (autoMatch && git.repositories.length > 0) {
+            comment = git.repositories[0].inputBox.value.toLowerCase();
+            const matched = emojis.filter(e => {
+                return e.description?.toLowerCase().includes(comment)
+                    || e.code?.toLowerCase().includes(comment);
+            });
+            if (matched.length > 0) {
+                emojis = matched;
+            }
         }
 
         const items = emojis.map(emojiObj => {
@@ -38,9 +47,7 @@ export function activate(context: vscode.ExtensionContext) {
         vscode.window.showQuickPick(items).then(function (selected) {
             if (selected) {
                 vscode.commands.executeCommand('workbench.view.scm');
-                const outputType = vscode.workspace.getConfiguration().get('gitmoji.outputType');
                 const valueToAdd = outputType === 'emoji' ? selected.emoji : selected.code;
-                const asSuffix: boolean | undefined = vscode.workspace.getConfiguration().get('gitmoji.asSuffix') || false;
 
                 if (uri) {
                     const uriPath = uri._rootUri?.path || uri.rootUri.path;
@@ -60,7 +67,7 @@ export function activate(context: vscode.ExtensionContext) {
     context.subscriptions.push(disposable);
 }
 
-function updateCommit(repository: Repository, valueOfGitmoji: String, asSuffix: boolean) {
+function updateCommit(repository: Repository, valueOfGitmoji: string, asSuffix: boolean) {
     if (!asSuffix){
         repository.inputBox.value = `${valueOfGitmoji} ${repository.inputBox.value}`;
     } else {

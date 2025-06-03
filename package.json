@@ -103,6 +103,11 @@
                     "type": "boolean",
                     "default": false,
                     "description": "%gitmoji.config.asSuffix%"
+                },
+                "gitmoji.autoMatch": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Whether to enable auto-matching emoji based on commit message"
                 }
             }
         }
