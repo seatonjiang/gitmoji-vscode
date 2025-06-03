@@ -135,6 +135,7 @@ Sample configuration:
 {
   "gitmoji.autoMatch": true
 }
+```
 
 ## 🤝 Contributing
 
