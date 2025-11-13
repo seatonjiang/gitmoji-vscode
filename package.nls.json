@@ -1,0 +1,14 @@
+{
+  "gitmoji.command.showGitmoji.title": "Choose Gitmoji",
+  "gitmoji.config.addCustomEmoji": "Add custom emoji other than Gitmoji",
+  "gitmoji.config.onlyUseCustomEmoji": "Only use your custom emoji, not the ones in the Gitmoji",
+  "gitmoji.config.outputType": "Configure the type of emoji output as needed",
+  "gitmoji.config.outputType.code": "Suitable for GitHub, Gitee etc",
+  "gitmoji.config.outputType.emoji": "Suitable for GitHub, Gitlab etc",
+  "gitmoji.config.showEmojiCode": "Enable searching gitmojis by emoji code (example: ambulance will return hotfix)",
+  "gitmoji.config.insertPosition": "Configure where to insert the Gitmoji in the commit message",
+  "gitmoji.config.insertPosition.start": "Insert Gitmoji at the beginning of the message",
+  "gitmoji.config.insertPosition.end": "Insert Gitmoji at the end of the message",
+  "gitmoji.config.insertPosition.cursor": "Insert Gitmoji at the current cursor in the commit editor when available",
+  "gitmoji.config.autoMatch": "Whether to enable auto-matching emoji based on commit message"
+}

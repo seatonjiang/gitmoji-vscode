@@ -1,0 +1,14 @@
+{
+  "gitmoji.command.showGitmoji.title": "选择表情符号",
+  "gitmoji.config.addCustomEmoji": "添加自定义表情符号",
+  "gitmoji.config.onlyUseCustomEmoji": "仅使用自定义添加的表情符号，而不使用扩展中自带的表情符号",
+  "gitmoji.config.outputType": "配置表情符号的输出类型",
+  "gitmoji.config.outputType.code": "适用于 GitHub、Gitee 等平台",
+  "gitmoji.config.outputType.emoji": "适用于 GitHub、Gitlab 等平台",
+  "gitmoji.config.showEmojiCode": "开启通过简码搜索表情符号功能",
+  "gitmoji.config.insertPosition": "配置表情符号的插入位置",
+  "gitmoji.config.insertPosition.start": "在消息开头插入表情符号",
+  "gitmoji.config.insertPosition.end": "在消息末尾插入表情符号",
+  "gitmoji.config.insertPosition.cursor": "在提交编辑器的光标处插入（可用时）",
+  "gitmoji.config.autoMatch": "开启根据提交消息自动匹配表情符号功能"
+}
