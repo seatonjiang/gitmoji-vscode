@@ -1,0 +1,16 @@
+.DS_Store
+.git/**
+.gitignore
+tsconfig.json
+package-lock.json
+*.vsix
+**/*.ts
+**/*.d.ts
+**/*.map
+
+src/**
+!src/languages/**
+
+.github/**
+!.github/assets/**
+!.github/readme/**
