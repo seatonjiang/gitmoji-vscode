@@ -182,7 +182,7 @@ let Gitmoji: Array<gitmojiList> = [
         emoji: "🚚",
         code: ":truck:",
         description: vscode.l10n.t(
-            "Move or rename resources (e.g.: files, paths, routes)"
+            "Move or rename resources (e.g.: files, paths, routes)",
         ),
     },
     {
@@ -314,14 +314,14 @@ let Gitmoji: Array<gitmojiList> = [
         emoji: "🗑️",
         code: ":wastebasket:",
         description: vscode.l10n.t(
-            "Deprecate code that needs to be cleaned up"
+            "Deprecate code that needs to be cleaned up",
         ),
     },
     {
         emoji: "🛂",
         code: ":passport_control:",
         description: vscode.l10n.t(
-            "Work on code related to authorization, roles and permissions"
+            "Work on code related to authorization, roles and permissions",
         ),
     },
     {
@@ -368,14 +368,14 @@ let Gitmoji: Array<gitmojiList> = [
         emoji: "💸",
         code: ":money_with_wings:",
         description: vscode.l10n.t(
-            "Add sponsorships or money related infrastructure"
+            "Add sponsorships or money related infrastructure",
         ),
     },
     {
         emoji: "🧵",
         code: ":thread:",
         description: vscode.l10n.t(
-            "Add or update code related to multithreading or concurrency"
+            "Add or update code related to multithreading or concurrency",
         ),
     },
     {
@@ -387,6 +387,11 @@ let Gitmoji: Array<gitmojiList> = [
         emoji: "✈️",
         code: ":airplane:",
         description: vscode.l10n.t("Improve offline support"),
+    },
+    {
+        emoji: "🦖",
+        code: ":t-rex:",
+        description: vscode.l10n.t("Code that adds backwards compatibility"),
     },
 ];
 
