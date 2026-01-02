@@ -32,6 +32,9 @@ export function activate(context: vscode.ExtensionContext) {
             const insertPosition: string | undefined = vscode.workspace
                 .getConfiguration()
                 .get("gitmoji.insertPosition");
+            const canRepeat: boolean | undefined = vscode.workspace
+                .getConfiguration()
+                .get("gitmoji.canRepeat");
 
             const allEmojis =
                 onlyUseCustomEmoji === true
@@ -118,7 +121,8 @@ export function activate(context: vscode.ExtensionContext) {
                                     selectedRepository,
                                     valueToAdd,
                                     false,
-                                    tokensToStrip
+                                    tokensToStrip,
+                                    canRepeat
                                 );
                             } else {
                                 const useSuffix = insertPosition === "end";
@@ -126,7 +130,8 @@ export function activate(context: vscode.ExtensionContext) {
                                     selectedRepository,
                                     valueToAdd,
                                     useSuffix,
-                                    tokensToStrip
+                                    tokensToStrip,
+                                    canRepeat
                                 );
                             }
                         }
@@ -152,7 +157,8 @@ export function activate(context: vscode.ExtensionContext) {
                                     repo,
                                     valueToAdd,
                                     false,
-                                    tokensToStrip
+                                    tokensToStrip,
+                                    canRepeat
                                 );
                             }
                         } else {
@@ -162,7 +168,8 @@ export function activate(context: vscode.ExtensionContext) {
                                     repo,
                                     valueToAdd,
                                     useSuffix,
-                                    tokensToStrip
+                                    tokensToStrip,
+                                    canRepeat
                                 );
                             }
                             if (git.repositories.length === 1) {
@@ -192,7 +199,8 @@ function updateCommit(
     repository: Repository,
     valueOfGitmoji: string,
     asSuffix: boolean,
-    tokensToStrip: string[]
+    tokensToStrip: string[],
+    canRepeat: boolean = false
 ) {
     const tokenPattern = buildTokenPattern(tokensToStrip);
     const startTokenRegex = new RegExp(`^(?:${tokenPattern})(?:\\s+|$)`);
@@ -201,10 +209,14 @@ function updateCommit(
     let current = repository.inputBox.value;
 
     if (!asSuffix) {
-        current = removeLeadingTokens(current, startTokenRegex);
+        if (!canRepeat) {
+            current = removeLeadingTokens(current, startTokenRegex);
+        }
         repository.inputBox.value = `${valueOfGitmoji} ${current}`.trim();
     } else {
-        current = removeTrailingTokens(current, endTokenRegex);
+        if (!canRepeat) {
+            current = removeTrailingTokens(current, endTokenRegex);
+        }
         const sep = current.length > 0 ? " " : "";
         repository.inputBox.value = `${current}${sep}${valueOfGitmoji}`;
     }

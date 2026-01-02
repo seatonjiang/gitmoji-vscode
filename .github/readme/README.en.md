@@ -141,6 +141,18 @@ Sample configuration:
 }
 ```
 
+### Allow repeated use of emoticons
+
+- `canRepeat` - Allows repeated use of emoticons in the commit message.
+
+Sample configuration:
+
+```json
+{
+  "gitmoji.canRepeat": true
+}
+```
+
 ## 💖 Project Support
 
 If this project has been helpful to you, please consider giving it a Star to show your support. Every bit of support fuels my motivation to keep optimizing and adding new features!

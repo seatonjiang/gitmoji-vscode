@@ -72,5 +72,6 @@
   "Add sponsorships or money related infrastructure": "Acrescentar patrocínios ou infra-estruturas relacionadas com dinheiro",
   "Add or update code related to multithreading or concurrency": "Adicionar ou actualizar código relacionado com multithreading ou concurrency",
   "Add or update code related to validation": "Adicionar ou actualizar o código relacionado com a validação",
-  "Improve offline support": "Aprimorar o suporte offline"
+  "Improve offline support": "Aprimorar o suporte offline",
+  "Code that adds backwards compatibility": "Código que adiciona compatibilidade com versões anteriores"
 }

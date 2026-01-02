@@ -10,5 +10,6 @@
   "gitmoji.config.insertPosition.start": "在消息开头插入表情符号",
   "gitmoji.config.insertPosition.end": "在消息末尾插入表情符号",
   "gitmoji.config.insertPosition.cursor": "在提交编辑器的光标处插入（可用时）",
-  "gitmoji.config.autoMatch": "开启根据提交消息自动匹配表情符号功能"
+  "gitmoji.config.autoMatch": "开启根据提交消息自动匹配表情符号功能",
+  "gitmoji.config.canRepeat": "允许重复添加表情符号，而不替换现有的表情符号"
 }

@@ -72,5 +72,6 @@
   "Add sponsorships or money related infrastructure": "スポンサーやお金に関するインフラの追加",
   "Add or update code related to multithreading or concurrency": "マルチスレッドや並行処理に関連するコードの追加/更新",
   "Add or update code related to validation": "バリデーションの追加/更新",
-  "Improve offline support": "オフライン対応の改善"
+  "Improve offline support": "オフライン対応の改善",
+  "Code that adds backwards compatibility": "バックウォードコンパイルに対応するコード"
 }

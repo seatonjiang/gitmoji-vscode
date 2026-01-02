@@ -1,7 +1,7 @@
 {
   "name": "gitmoji-vscode",
   "displayName": "Gitmoji",
-  "version": "2025.11.13",
+  "version": "2025.12.29",
   "publisher": "seatonjiang",
   "description": "VS Code extension for adding emojis to submitted messages",
   "author": {
@@ -118,6 +118,11 @@
           "type": "boolean",
           "default": false,
           "description": "%gitmoji.config.autoMatch%"
+        },
+        "gitmoji.canRepeat": {
+          "type": "boolean",
+          "default": false,
+          "description": "%gitmoji.config.canRepeat%"
         }
       }
     }
@@ -128,12 +133,12 @@
   },
   "devDependencies": {
     "@types/mocha": "^10.0.10",
-    "@types/node": "^20.19.25",
+    "@types/node": "^25.0.3",
     "@types/vscode": "^1.96.3",
     "@vscode/test-electron": "^2.5.2",
     "@vscode/l10n-dev": "^0.0.35",
-    "@vscode/vsce": "^3.7.0",
-    "glob": "^11.0.3",
+    "@vscode/vsce": "^3.7.1",
+    "glob": "^13.0.0",
     "mocha": "^11.7.5",
     "typescript": "^5.9.3"
   },

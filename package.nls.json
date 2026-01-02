@@ -10,5 +10,6 @@
   "gitmoji.config.insertPosition.start": "Insert Gitmoji at the beginning of the message",
   "gitmoji.config.insertPosition.end": "Insert Gitmoji at the end of the message",
   "gitmoji.config.insertPosition.cursor": "Insert Gitmoji at the current cursor in the commit editor when available",
-  "gitmoji.config.autoMatch": "Whether to enable auto-matching emoji based on commit message"
+  "gitmoji.config.autoMatch": "Whether to enable auto-matching emoji based on commit message",
+  "gitmoji.config.canRepeat": "Allow adding multiple emojis without replacing existing ones"
 }

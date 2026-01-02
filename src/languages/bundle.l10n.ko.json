@@ -72,5 +72,6 @@
   "Add sponsorships or money related infrastructure": "스폰서 및 자금 관련 인프라 추가",
   "Add or update code related to multithreading or concurrency": "멀티스레딩 및 병렬처리 관련 코드 추가/업데이트",
   "Add or update code related to validation": "검증 관련 추가/업데이트",
-  "Improve offline support": "오프라인 지원 개선"
+  "Improve offline support": "오프라인 지원 개선",
+  "Code that adds backwards compatibility": "버전 호환성 개선 코드"
 }

@@ -10,5 +10,6 @@
   "gitmoji.config.insertPosition.start": "コミットメッセージの先頭に絵文字を挿入する",
   "gitmoji.config.insertPosition.end": "コミットメッセージの末尾に絵文字を挿入する",
   "gitmoji.config.insertPosition.cursor": "コミットメッセージエディターで現在のカーソル位置に絵文字を挿入する（可能な場合）",
-  "gitmoji.config.autoMatch": "コミットメッセージに基づいて絵文字を自動的にマッチングするかどうか"
+  "gitmoji.config.autoMatch": "コミットメッセージに基づいて絵文字を自動的にマッチングするかどうか",
+  "gitmoji.config.canRepeat": "同じ絵文字を複数回追加できるようにする"
 }

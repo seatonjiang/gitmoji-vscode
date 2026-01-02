@@ -72,5 +72,6 @@
   "Add sponsorships or money related infrastructure": "添加赞助或与金钱相关的基础设施",
   "Add or update code related to multithreading or concurrency": "添加或更新与多线程或并发相关的代码",
   "Add or update code related to validation": "添加或更新与验证相关的代码",
-  "Improve offline support": "改善离线支持"
+  "Improve offline support": "改善离线支持",
+  "Code that adds backwards compatibility": "添加向后兼容性的代码"
 }
