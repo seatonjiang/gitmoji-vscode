@@ -212,7 +212,7 @@ function updateCommit(
         if (!canRepeat) {
             current = removeLeadingTokens(current, startTokenRegex);
         }
-        repository.inputBox.value = `${valueOfGitmoji} ${current}`.trim();
+        repository.inputBox.value = `${valueOfGitmoji} ${current}`;
     } else {
         if (!canRepeat) {
             current = removeTrailingTokens(current, endTokenRegex);
