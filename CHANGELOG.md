@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026.3.6
+
+### 🛠 Fixes
+
+- The issue where inserting an emoji before typing submission text does not automatically add a space after the emoji.
+
 ## 2025.12.29
 
 ### ✨ Features
