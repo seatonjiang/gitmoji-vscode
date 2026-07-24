@@ -18,8 +18,8 @@
 <p align="center">在提交信息中添加表情符号的 VS Code 扩展</p>
 
 <p align="center">
-  <strong>简体中文</strong> · <a href=".github/readme/README.en.md">English</a> · <a href=".github/readme/README.pt-br.md">Português Brasileiro</a> ·
-  <a href=".github/readme/README.pt-pt.md">Português Europeu</a> · <a href=".github/readme/README.ja.md">日本語</a> · <a href=".github/readme/README.ko.md">한국어</a>
+  <strong>简体中文</strong> · <a href=".github/readme/README.en.md">English</a> · <a href=".github/readme/README.pt-BR.md">Português Brasileiro</a> ·
+  <a href=".github/readme/README.pt-PT.md">Português Europeu</a> · <a href=".github/readme/README.ja.md">日本語</a> · <a href=".github/readme/README.ko.md">한국어</a>
 </p>
 
 ## 💻 扩展截图
