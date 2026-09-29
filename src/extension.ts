@@ -43,11 +43,12 @@ export function activate(context: vscode.ExtensionContext) {
             let emojis = [...allEmojis];
 
             const usage = loadUsageCounts(context);
+            const targets = resolveTargetRepositories(git.repositories, uri);
 
             // fetch comment to auto match emoji
             let comment = "";
-            if (autoMatch && git.repositories.length > 0) {
-                comment = git.repositories[0].inputBox.value.toLowerCase();
+            if (autoMatch && targets.length > 0) {
+                comment = targets[0].inputBox.value.toLowerCase();
                 const matched = emojis.filter((e) => {
                     return (
                         e.description?.toLowerCase().includes(comment) ||
@@ -91,93 +92,34 @@ export function activate(context: vscode.ExtensionContext) {
                     const tokensToStrip: string[] = Array.from(
                         new Set([...emojiTokens, ...codeTokens])
                     );
-                    let targetIndex: number | undefined = undefined;
-
-                    if (uri) {
-                        const uriPath = uri._rootUri?.path || uri.rootUri.path;
-                        let selectedRepository = git.repositories.find(
-                            (repository) => repository.rootUri.path === uriPath
-                        );
-                        if (selectedRepository) {
-                            targetIndex = git.repositories.findIndex(
-                                (r) =>
-                                    r.rootUri.path ===
-                                    selectedRepository.rootUri.path
-                            );
-                            if (preferCursor) {
-                                const insertedInEditor =
-                                    await tryInsertIntoCommitEditor(valueToAdd);
-                                if (insertedInEditor) {
-                                    return;
-                                }
-                                await focusScmInputForRepoIndex(targetIndex);
-                                const typed = await tryTypeIntoScmInput(
-                                    valueToAdd
-                                );
-                                if (typed) {
-                                    return;
-                                }
-                                updateCommit(
-                                    selectedRepository,
-                                    valueToAdd,
-                                    false,
-                                    tokensToStrip,
-                                    canRepeat
-                                );
-                            } else {
-                                const useSuffix = insertPosition === "end";
-                                updateCommit(
-                                    selectedRepository,
-                                    valueToAdd,
-                                    useSuffix,
-                                    tokensToStrip,
-                                    canRepeat
-                                );
-                            }
-                        }
-                    } else {
-                        if (preferCursor) {
-                            const insertedInEditor =
-                                await tryInsertIntoCommitEditor(valueToAdd);
-                            if (insertedInEditor) {
-                                return;
-                            }
-                            if (git.repositories.length > 0) {
-                                targetIndex = 0;
-                                await focusScmInputForRepoIndex(targetIndex);
-                                const typed = await tryTypeIntoScmInput(
-                                    valueToAdd
-                                );
-                                if (typed) {
-                                    return;
-                                }
-                            }
-                            for (let repo of git.repositories) {
-                                updateCommit(
-                                    repo,
-                                    valueToAdd,
-                                    false,
-                                    tokensToStrip,
-                                    canRepeat
-                                );
-                            }
-                        } else {
-                            const useSuffix = insertPosition === "end";
-                            for (let repo of git.repositories) {
-                                updateCommit(
-                                    repo,
-                                    valueToAdd,
-                                    useSuffix,
-                                    tokensToStrip,
-                                    canRepeat
-                                );
-                            }
-                            if (git.repositories.length === 1) {
-                                targetIndex = 0;
-                            }
-                        }
+                    if (
+                        preferCursor &&
+                        (await tryInsertIntoCommitEditor(valueToAdd))
+                    ) {
+                        return;
                     }
-                    await focusScmInputForRepoIndex(targetIndex);
+                    const selection =
+                        targets.length === 1
+                            ? await focusScmInput(targets[0])
+                            : undefined;
+                    if (preferCursor && selection) {
+                        await typeIntoScmInput(
+                            targets[0].inputBox.value,
+                            selection,
+                            valueToAdd
+                        );
+                        return;
+                    }
+                    for (const repo of targets) {
+                        updateCommit(
+                            repo,
+                            valueToAdd,
+                            insertPosition === "end",
+                            tokensToStrip,
+                            // cursor insertion never replaces, nor should its fallback
+                            canRepeat || preferCursor
+                        );
+                    }
                 }
             });
         }
@@ -262,34 +204,101 @@ function escapeRegExp(str: string): string {
 }
 
 /**
- * Focus the commit message input box of the specified repository.
+ * Resolves the repositories whose commit message receives the Gitmoji.
  *
- * Compatibility strategy:
- * - Always focus the SCM view first;
- * - If a repository index is provided, attempt to move focus among repositories
- *   using `workbench.scm.action.focusPreviousInput` and
- *   `workbench.scm.action.focusNextInput`;
- * - If the commands are unavailable (older VSCode), silently ignore and
- *   ensure the SCM view remains focused.
+ * Priority:
+ * - The repository the command was invoked on (`uri`, passed by the per-repository SCM title button);
+ * - The last focused repository (`ui.selected`: VS Code selects a repository when it or its commit
+ *   message input box gets focus);
+ * - All repositories.
  */
-async function focusScmInputForRepoIndex(index?: number): Promise<void> {
-    try {
-        await vscode.commands.executeCommand("workbench.scm.focus");
-    } catch {}
-
-    if (index === undefined) {
-        return;
+function resolveTargetRepositories(
+    repositories: Repository[],
+    uri?: any
+): Repository[] {
+    if (uri) {
+        const uriPath = uri._rootUri?.path || uri.rootUri.path;
+        return repositories.filter((r) => r.rootUri.path === uriPath);
     }
+    const selected = repositories.find((r) => r.ui.selected);
+    return selected ? [selected] : repositories;
+}
 
-    try {
-        // In a multi-repo scenario, the first execution focuses on the first commit input box,
-        // and executing index more times moves the focus to the target repository's commit input box.
-        for (let i = 0; i <= index; i++) {
-            await vscode.commands.executeCommand(
-                "workbench.scm.action.focusNextInput"
-            );
+/**
+ * Moves focus to the commit message input box of the specified repository.
+ * Returns its selection as offsets into the message, or `undefined` if focusing failed.
+ *
+ * The API tells neither which input box has focus, nor how to focus a given one. Instead:
+ * - `workbench.scm.action.focusNextInput` focuses the input box of the selected repository,
+ *   unless an input box already has focus, in which case it moves on to the next repository
+ *   (calling it blindly is what made focus cycle through, and expand, other repositories);
+ * - `type` inserts text in the focused editor, if any.
+ * Hence a zero-width space is typed as a probe (and removed): if it lands in the target input box, focus is
+ * already there, and diffing the message locates the selection (unambiguously, unlike with a regular space);
+ * otherwise, `focusNextInput` is issued once and the probe repeated.
+ * Only the selected repository can be focused this way.
+ */
+async function focusScmInput(
+    repository: Repository
+): Promise<{ start: number; end: number } | undefined> {
+    const probe = "\u200b";
+    // `undo` may also revert the user's last typing, so only use it to restore a replaced selection
+    const removeProbe = (replaced: boolean) =>
+        vscode.commands.executeCommand(replaced ? "undo" : "deleteLeft");
+    if (!repository.ui.selected) {
+        return undefined;
+    }
+    for (const refocus of [false, true]) {
+        if (refocus) {
+            try {
+                await vscode.commands.executeCommand(
+                    "workbench.scm.action.focusNextInput"
+                );
+            } catch {
+                return undefined;
+            }
         }
-    } catch {}
+        const before = repository.inputBox.value;
+        // edits to the input box document are not reported in time, those to regular editors are
+        const active = vscode.window.activeTextEditor?.document;
+        let stray: vscode.TextDocumentContentChangeEvent | undefined;
+        const listener = vscode.workspace.onDidChangeTextDocument((e) => {
+            if (e.document === active) {
+                stray = e.contentChanges[0] ?? stray;
+            }
+        });
+        try {
+            await vscode.commands.executeCommand("type", { text: probe });
+        } catch {
+            return undefined;
+        } finally {
+            listener.dispose();
+        }
+        // the input box value is synced before `type` returns
+        const after = repository.inputBox.value;
+        if (after !== before) {
+            // `after` is `before` with [start, end) replaced by the probe
+            let start = 0;
+            while (after[start] === before[start]) {
+                start++;
+            }
+            const end = before.length - (after.length - start - probe.length);
+            await removeProbe(end > start);
+            return { start, end };
+        }
+        if (stray) {
+            await removeProbe(stray.rangeLength > 0);
+        }
+    }
+    return undefined;
+}
+
+/**
+ * Pads the Gitmoji with a space on either side, unless the neighboring character is whitespace or missing.
+ */
+function padGitmoji(value: string, before?: string, after?: string): string {
+    const pad = (c?: string) => (c && !/\s/.test(c) ? " " : "");
+    return pad(before) + value + pad(after);
 }
 
 function getGitExtension() {
@@ -329,12 +338,7 @@ async function tryInsertIntoCommitEditor(valueToAdd: string): Promise<boolean> {
         pos.character > 0 ? lineText[pos.character - 1] : undefined;
     const afterChar =
         pos.character < lineText.length ? lineText[pos.character] : undefined;
-    const needsPrefixSpace = beforeChar !== undefined && !/\s/.test(beforeChar);
-    const needsSuffixSpace = afterChar !== undefined && !/\s/.test(afterChar);
-    const insertText =
-        (needsPrefixSpace ? " " : "") +
-        valueToAdd +
-        (needsSuffixSpace ? " " : "");
+    const insertText = padGitmoji(valueToAdd, beforeChar, afterChar);
     const success = await editor.edit((edit) => {
         if (!selection.isEmpty) {
             edit.delete(selection);
@@ -349,21 +353,20 @@ async function tryInsertIntoCommitEditor(valueToAdd: string): Promise<boolean> {
 }
 
 /**
- * Inserts Gitmoji at the current cursor position in the SCM commit message input box.
- *
- * Behavior and limitations:
- * - Relies on VS Code’s `type` command to input text at the currently focused control;
- * - Cannot read characters before or after the cursor, so it always adds a space on both sides to prevent sticking;
- * - The caller must ensure focus has been moved to the commit input box of the target repository.
+ * Types the Gitmoji over the selection of the focused SCM commit message input box, padded as in `padGitmoji`.
+ * The selection is the one reported by `focusScmInput`, which must precede this call.
  */
-async function tryTypeIntoScmInput(valueToAdd: string): Promise<boolean> {
-    try {
-        const text = ` ${valueToAdd} `;
-        await vscode.commands.executeCommand("type", { text });
-        return true;
-    } catch {
-        return false;
-    }
+async function typeIntoScmInput(
+    message: string,
+    selection: { start: number; end: number },
+    valueToAdd: string
+): Promise<void> {
+    const text = padGitmoji(
+        valueToAdd,
+        message[selection.start - 1],
+        message[selection.end]
+    );
+    await vscode.commands.executeCommand("type", { text });
 }
 
 /**

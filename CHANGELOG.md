@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026.9.29
+
+### 🛠 Fixes
+
+- Focus cycling through, and expanding, other repositories after inserting Gitmoji
+- Gitmoji inserted into all commit boxes instead of the focused one
+- Superfluous spaces around Gitmoji inserted at the cursor in the commit box
+- Existing Gitmoji replaced when inserting at the cursor falls back to the start of the message
+
 ## 2026.3.6
 
 ### 🛠 Fixes
