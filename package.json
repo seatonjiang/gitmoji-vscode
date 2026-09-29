@@ -1,7 +1,7 @@
 {
   "name": "gitmoji-vscode",
   "displayName": "Gitmoji",
-  "version": "2026.3.6",
+  "version": "2026.9.29",
   "publisher": "seatonjiang",
   "description": "VS Code extension for adding emojis to submitted messages",
   "author": {
